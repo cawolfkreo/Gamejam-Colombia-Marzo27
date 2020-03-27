@@ -7,7 +7,7 @@
 * [__Yesid Bejarano__](https://github.com/yabejarano10)
 * [__Camilo Zambrano Votto__](https://github.com/cawolfkreo)
 * [__Juan Camilo Useche__](https://github.com/yabejarano10)
-* [__Juan Muñoz__]()
+* [__Juan Muñoz__](https://github.com/jmmunoz14)
 
 ## License
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
