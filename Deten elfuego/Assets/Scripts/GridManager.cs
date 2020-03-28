@@ -13,21 +13,72 @@ public class GridManager : MonoBehaviour
     private int numYCells = 10;
 
     //The size a single cell is going to have.
-    [SerializeField]
-    private float cellSize = 5f;
+    private float cellSize;
     
     //The grid
     private Grid grid;
 
+    //The position where the grid starts.
+    [SerializeField]
+    private Transform gridPosition;
+
+    //The position of the floor where the tiles will be.
+    [SerializeField]
+    private GameObject floor;
+
+    [SerializeField]
+    private GameObject cubo;
+
     // Start is called before the first frame update
     void Start()
     {
-        grid = new Grid(numXCells, numXCells, cellSize);
+        Vector3 size = floor.GetComponent<Renderer>().bounds.size;
+
+        cellSize = size.x / (float) numXCells;
+
+        grid = new Grid(numXCells, numYCells, cellSize, gridPosition.position);
     }
 
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(grid.test());
+        Vector3 mousePosition;
+        bool isASuccesHit = GetMouseWorldPosition(Input.mousePosition, Camera.main, out mousePosition);
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            if (isASuccesHit)
+            {                
+                Vector3 position4Object = grid.GetWorldPositionCloserToCell(mousePosition);
+                position4Object.y += 0.5f;
+                AddOrRemoveObjectFromWorld(mousePosition, position4Object);              
+            }            
+        }
+    }
+
+    private void AddOrRemoveObjectFromWorld(Vector3 mousePosition, Vector3 position4Object)
+    {
+        if (grid.SetGridObject(mousePosition, cubo))
+        {
+            //main deme el nuevo objeto
+            GameObject createdObject = Instantiate(cubo, position4Object, Quaternion.identity);
+            createdObject.transform.parent = gridPosition.transform;
+        }
+    }
+
+    private bool GetMouseWorldPosition(Vector3 screenPosition, Camera worldCamera, out Vector3 position)
+    {
+        Ray ray = worldCamera.ScreenPointToRay(screenPosition);
+
+        if (Physics.Raycast(ray, out RaycastHit hitInfo))
+        {
+            position = hitInfo.point;
+            return true;
+        }
+        else
+        {
+            position = default;
+            return false;
+        }
     }
 }
