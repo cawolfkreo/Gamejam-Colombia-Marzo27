@@ -293,7 +293,6 @@ MonoBehaviour:
   gridPosition: {fileID: 92896010}
   floor: {fileID: 1493936901}
   cubo: {fileID: 8802855613254833398, guid: 98b9a8f071c2a504d9c4044b155c6aee, type: 3}
-  dashSize: 0
 --- !u!1 &1356437442
 GameObject:
   m_ObjectHideFlags: 0

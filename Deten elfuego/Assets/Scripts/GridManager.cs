@@ -14,7 +14,7 @@ public class GridManager : MonoBehaviour
 
     //The size a single cell is going to have.
     private float cellSize;
-    
+
     //The grid
     private Grid grid;
 
@@ -30,11 +30,8 @@ public class GridManager : MonoBehaviour
     [SerializeField]
     private GameObject cubo;
 
-    //The size of each stroke on the dotted line.
-    [SerializeField]
-    private float dashSize;
-
     //The line manager prefab
+    [SerializeField]
     private GameObject LinePrefab;
 
     private GameObject GridLines;
@@ -47,7 +44,7 @@ public class GridManager : MonoBehaviour
         GridLines = new GameObject("GridLines");
         GridLines.transform.parent = transform;
 
-        cellSize = size.x / (float) numXCells;
+        cellSize = size.x / (float)numXCells;
 
         grid = new Grid(numXCells, numYCells, cellSize, gridPosition.position, this);
     }
@@ -61,11 +58,11 @@ public class GridManager : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             if (isASuccesHit)
-            {                
+            {
                 Vector3 position4Object = grid.GetWorldPositionCloserToCell(mousePosition);
                 position4Object.y += 0.5f;
-                AddOrRemoveObjectFromWorld(mousePosition, position4Object);              
-            }            
+                AddOrRemoveObjectFromWorld(mousePosition, position4Object);
+            }
         }
     }
 
