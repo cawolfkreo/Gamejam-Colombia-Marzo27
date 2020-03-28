@@ -293,6 +293,9 @@ MonoBehaviour:
   gridPosition: {fileID: 92896010}
   floor: {fileID: 1493936901}
   cubo: {fileID: 8802855613254833398, guid: 98b9a8f071c2a504d9c4044b155c6aee, type: 3}
+  dashSize: 2.1
+  LinePrefab: {fileID: 1797400627867288074, guid: d79b3ef584ef5774ea18816c2350c056,
+    type: 3}
 --- !u!1 &1356437442
 GameObject:
   m_ObjectHideFlags: 0
@@ -369,8 +372,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1356437442}
-  m_LocalRotation: {x: -0.21486107, y: 0.7685509, z: -0.32567275, w: -0.5070518}
-  m_LocalPosition: {x: 15.570684, y: 14.860271, z: 11.391325}
+  m_LocalRotation: {x: -0.2487572, y: 0.7227233, z: -0.32171875, w: -0.5588272}
+  m_LocalPosition: {x: 15.558126, y: 14.059807, z: 6.9752417}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

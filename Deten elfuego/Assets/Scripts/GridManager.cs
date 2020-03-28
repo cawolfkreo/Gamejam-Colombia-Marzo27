@@ -26,17 +26,31 @@ public class GridManager : MonoBehaviour
     [SerializeField]
     private GameObject floor;
 
+    //TEMPORAL: El objeto que de momento se pone al hacer click.
     [SerializeField]
     private GameObject cubo;
+
+    //The size of each stroke on the dotted line.
+    [SerializeField]
+    private float dashSize;
+
+    //The line manager prefab
+    [SerializeField]
+    private GameObject LinePrefab;
+
+    private GameObject GridLines;
 
     // Start is called before the first frame update
     void Start()
     {
         Vector3 size = floor.GetComponent<Renderer>().bounds.size;
 
+        GridLines = new GameObject("GridLines");
+        GridLines.transform.parent = transform;
+
         cellSize = size.x / (float) numXCells;
 
-        grid = new Grid(numXCells, numYCells, cellSize, gridPosition.position);
+        grid = new Grid(numXCells, numYCells, cellSize, gridPosition.position, dashSize, this);
     }
 
     // Update is called once per frame
@@ -80,5 +94,14 @@ public class GridManager : MonoBehaviour
             position = default;
             return false;
         }
+    }
+
+    public LineRenderManager createLineManager()
+    {
+        GameObject line = Instantiate(LinePrefab);
+
+        line.transform.parent = GridLines.transform;
+
+        return line.GetComponent<LineRenderManager>();
     }
 }
