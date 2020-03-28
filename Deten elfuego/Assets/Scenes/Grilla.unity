@@ -293,9 +293,7 @@ MonoBehaviour:
   gridPosition: {fileID: 92896010}
   floor: {fileID: 1493936901}
   cubo: {fileID: 8802855613254833398, guid: 98b9a8f071c2a504d9c4044b155c6aee, type: 3}
-  dashSize: 2.1
-  LinePrefab: {fileID: 1797400627867288074, guid: d79b3ef584ef5774ea18816c2350c056,
-    type: 3}
+  dashSize: 0
 --- !u!1 &1356437442
 GameObject:
   m_ObjectHideFlags: 0
@@ -346,7 +344,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 1000
+  far clip plane: 1800
   field of view: 60
   orthographic: 0
   orthographic size: 5

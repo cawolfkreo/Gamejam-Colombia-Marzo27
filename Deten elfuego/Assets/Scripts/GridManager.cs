@@ -35,7 +35,6 @@ public class GridManager : MonoBehaviour
     private float dashSize;
 
     //The line manager prefab
-    [SerializeField]
     private GameObject LinePrefab;
 
     private GameObject GridLines;
@@ -50,7 +49,7 @@ public class GridManager : MonoBehaviour
 
         cellSize = size.x / (float) numXCells;
 
-        grid = new Grid(numXCells, numYCells, cellSize, gridPosition.position, dashSize, this);
+        grid = new Grid(numXCells, numYCells, cellSize, gridPosition.position, this);
     }
 
     // Update is called once per frame
