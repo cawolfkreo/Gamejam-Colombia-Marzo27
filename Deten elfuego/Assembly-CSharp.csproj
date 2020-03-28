@@ -65,6 +65,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Grid.cs" />
     <Compile Include="Assets\Scripts\GridManager.cs" />
+    <Compile Include="Assets\Scripts\LineRenderManager.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>E:/Gamejam marzo27/Gamejam-Colombia-Marzo27/Deten elfuego/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
