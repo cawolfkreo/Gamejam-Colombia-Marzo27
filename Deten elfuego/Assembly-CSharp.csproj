@@ -82,6 +82,7 @@
     <Compile Include="Assets\JMO Assets\Cartoon FX\Scripts\CFX_LightIntensityFade.cs" />
     <Compile Include="Assets\Scripts\Grid.cs" />
     <Compile Include="Assets\Scripts\GridManager.cs" />
+    <Compile Include="Assets\Scripts\Hide.cs" />
     <Compile Include="Assets\Scripts\LampFalling.cs" />
     <Compile Include="Assets\Scripts\LineRenderManager.cs" />
     <None Include="Assets\3D objects\Smartphone\StandardColorMask.shader" />
