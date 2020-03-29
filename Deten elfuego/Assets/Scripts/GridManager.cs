@@ -76,6 +76,13 @@ public class GridManager : MonoBehaviour
         }
     }
 
+    public void AddObject(Vector3 position, GameObject objectToAdd)
+    {
+        Vector3 position4Object = grid.GetWorldPositionCloserToCell(position);
+        position4Object.y += 0.5f;
+        grid.SetGridObject(mousePosition, objectToAdd);
+    }
+
     private bool GetMouseWorldPosition(Vector3 screenPosition, Camera worldCamera, out Vector3 position)
     {
         Ray ray = worldCamera.ScreenPointToRay(screenPosition);
