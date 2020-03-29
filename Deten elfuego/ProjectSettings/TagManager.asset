@@ -7,6 +7,10 @@ TagManager:
   - Piso
   - lamp
   - book
+  - FxTemporaire
+  - Cortador
+  - Detonador
+  - Rodador
   layers:
   - Default
   - TransparentFX

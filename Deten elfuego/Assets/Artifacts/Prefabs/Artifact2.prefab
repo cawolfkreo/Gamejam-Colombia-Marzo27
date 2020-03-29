@@ -91,9 +91,10 @@ GameObject:
   - component: {fileID: 2914888881979807583}
   - component: {fileID: 1950996583572379177}
   - component: {fileID: 7426228932780846799}
+  - component: {fileID: 6214871566339900974}
   m_Layer: 0
   m_Name: hammer
-  m_TagString: Untagged
+  m_TagString: Detonador
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -179,6 +180,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &6214871566339900974
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 965304250207560915}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.11299149, y: 0.034669712, z: 0.30318746}
+  m_Center: {x: 0.12023488, y: -0.000000013036136, z: -0.05522285}
 --- !u!1 &3429619632975985807
 GameObject:
   m_ObjectHideFlags: 0
@@ -378,7 +392,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 23a0a8cfdd7ac8f40936350e17383928, type: 2}
+  - {fileID: 2100000, guid: 58938a83b6652034faf38020619e4a04, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -457,7 +471,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 23a0a8cfdd7ac8f40936350e17383928, type: 2}
+  - {fileID: 2100000, guid: 5169bd974e6acf44588799bd388895b8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -646,6 +660,9 @@ GameObject:
   m_Component:
   - component: {fileID: 9068281893585975747}
   - component: {fileID: 105407757884095862}
+  - component: {fileID: 3434752995579468633}
+  - component: {fileID: 6502359200317783837}
+  - component: {fileID: 596533934625237044}
   m_Layer: 0
   m_Name: Artifact2
   m_TagString: Untagged
@@ -693,6 +710,48 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &3434752995579468633
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6808865408830389755}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.3908317, y: 0.49202824, z: 0.049968556}
+  m_Center: {x: 0.012015939, y: 0.25398588, z: 0.14042094}
+--- !u!114 &6502359200317783837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6808865408830389755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61d8c34130b771147b0a948f1dbb01ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggeredBy: Cortador
+--- !u!54 &596533934625237044
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6808865408830389755}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &7167111019504988628
 GameObject:
   m_ObjectHideFlags: 0
@@ -751,7 +810,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6d412aac97088174ba56c7f1160b7090, type: 2}
+  - {fileID: 2100000, guid: c19bbcc8fee9ce248bd8330bfee77fa1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

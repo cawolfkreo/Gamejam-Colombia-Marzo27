@@ -1,11 +1,6 @@
 fileFormatVersion: 2
-<<<<<<< HEAD:Deten elfuego/Assets/Original Wood Textures/Wood Texture 01/Wood Texture 01 diffuse.tga.meta
-guid: 802a758c87e6b924c94f71de7dba9a7b
-timeCreated: 1473370532
-=======
 guid: cc044e04b7f4e4a519afa63f44551d51
 timeCreated: 1468690331
->>>>>>> 36229d8cded03c66e0dafdebb795a586e058071e:Deten elfuego/Assets/AssetStoreAssets/Bowling Kegel & Ball/Resources/Textures/Kegel_AlbedoTransparency.png.meta
 licenseType: Store
 TextureImporter:
   fileIDToRecycleName: {}

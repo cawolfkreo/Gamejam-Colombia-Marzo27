@@ -2,27 +2,27 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BulletCollision : MonoBehaviour
+public class ArtifactProjectileScript : MonoBehaviour
 {
-    /*Sistema de particulas de la bala*/
-    public ParticleSystem powPSys;
-    /*animator de la bala*/
-    public Animator animator;
-
+    /* Animator del artefacto que contien el projectil*/
+    public Animator animatorProjectil;
     // Start is called before the first frame update
     void Start()
     {
         
     }
 
+    public void StopProjectile()
+    {
+        
+    }
     // Update is called once per frame
     void Update()
     {
-      
+        
     }
     private void OnTriggerEnter(Collider other)
     {
- 
-        powPSys.Play();
+        animatorProjectil.enabled = false;
     }
 }

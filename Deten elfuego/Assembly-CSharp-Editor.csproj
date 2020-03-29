@@ -285,11 +285,11 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
-    <Reference Include="JMOAssets_CartoonFXFreeWelcome">
-      <HintPath>D:/GameDev/Gamejam-Colombia-Marzo27/Deten elfuego/Assets/JMO Assets/Editor/JMOAssets_CartoonFXFreeWelcome.dll</HintPath>
-    </Reference>
     <Reference Include="JMOAssets">
       <HintPath>D:/GameDev/Gamejam-Colombia-Marzo27/Deten elfuego/Assets/JMO Assets/Editor/JMOAssets.dll</HintPath>
+    </Reference>
+    <Reference Include="JMOAssets_CartoonFXFreeWelcome">
+      <HintPath>D:/GameDev/Gamejam-Colombia-Marzo27/Deten elfuego/Assets/JMO Assets/Editor/JMOAssets_CartoonFXFreeWelcome.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>D:/GameDev/Gamejam-Colombia-Marzo27/Deten elfuego/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
