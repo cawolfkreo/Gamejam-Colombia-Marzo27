@@ -29,7 +29,7 @@ public class StatusManager : MonoBehaviour
         Debug.Log(gameStatus);
         if (sparkle.GetComponent<ParticleSystem>().enableEmission && gameStatus == 1)
         {
-            StartText.text = "Ok, eso es malo, ¿Crees poder evitarlo?";
+           // StartText.text = "Ok, eso es malo, ¿Crees poder evitarlo?";
             canvasStart.SetActive(true);
         } else if (gameStatus == 2)
         {
