@@ -125,7 +125,6 @@ public class Grid
         {
             if(gridArray[x, y] == null)
             {
-                Debug.Log(value);
                 gridArray[x, y] = value;
                 return true;
             }

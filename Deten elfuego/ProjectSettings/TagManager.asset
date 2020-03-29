@@ -10,6 +10,7 @@ TagManager:
   - FxTemporaire
   - MapObject
   - MapObjectParent
+  - GridLines
   layers:
   - Default
   - TransparentFX
