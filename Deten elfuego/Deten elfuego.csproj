@@ -619,14 +619,17 @@
   <ItemGroup>
     <Compile Include="Assets\AddConstantVelocity.cs" />
     <Compile Include="Assets\ChainBooks.cs" />
+    <Compile Include="Assets\ChainFinal.cs" />
     <Compile Include="Assets\ChainFour.cs" />
     <Compile Include="Assets\ChainSecond.cs" />
     <Compile Include="Assets\ChainThird.cs" />
     <Compile Include="Assets\Scripts\Grid.cs" />
     <Compile Include="Assets\Scripts\GridManager.cs" />
     <Compile Include="Assets\Scripts\LampFalling.cs" />
+    <Compile Include="Assets\Scripts\LineRenderManager.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\3D objects\Smartphone\StandardColorMask.shader" />
     <None Include="Packages\com.unity.collab-proxy\Editor\Resources\Styles\CollabHistoryCommon.uss" />
     <None Include="Packages\com.unity.collab-proxy\Editor\Resources\Styles\CollabHistoryDark.uss" />
     <None Include="Packages\com.unity.collab-proxy\Editor\Resources\Styles\CollabHistoryLight.uss" />
