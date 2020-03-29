@@ -440,7 +440,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -186.6001, y: 11.845215}
+  m_AnchoredPosition: {x: -195, y: 11.84451}
   m_SizeDelta: {x: 160, y: 43.910004}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &567157196
@@ -485,7 +485,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 567157197}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1592483367}
+        m_MethodName: DisplayRollers
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &567157197
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -778,8 +789,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 50.79, y: -13.28}
-  m_SizeDelta: {x: 98.41, y: 23.43}
+  m_AnchoredPosition: {x: 0.29000092, y: -0.10000038}
+  m_SizeDelta: {x: -2.58, y: -2.92}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &898411144
 MonoBehaviour:
@@ -1379,7 +1390,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 190.40033, y: 11.844513}
+  m_AnchoredPosition: {x: 195, y: 11.844513}
   m_SizeDelta: {x: 160, y: 43.905}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1307970306
@@ -1424,7 +1435,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1307970307}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1592483367}
+        m_MethodName: DisplayCutters
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1307970307
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1787,9 +1809,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 1592483363}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 982bcfe045a0d6b4c9160adef0c1d30b, type: 3}
+  m_Script: {fileID: 11500000, guid: 5bba7e777d09f094e98a9a69839efc2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rollers:
+  - {fileID: 8802855613254833398, guid: 98b9a8f071c2a504d9c4044b155c6aee, type: 3}
+  - {fileID: 5935207823854388183, guid: e88cd00ad376f4544bb9d8d1cff47b1c, type: 3}
+  - {fileID: 4991821417585412055, guid: b0e189afc03a8b54d9d917eeae4660e1, type: 3}
+  detonators:
+  - {fileID: 5935207823854388183, guid: e88cd00ad376f4544bb9d8d1cff47b1c, type: 3}
+  - {fileID: 8802855613254833398, guid: 98b9a8f071c2a504d9c4044b155c6aee, type: 3}
+  - {fileID: 4991821417585412055, guid: b0e189afc03a8b54d9d917eeae4660e1, type: 3}
+  cutters:
+  - {fileID: 4991821417585412055, guid: b0e189afc03a8b54d9d917eeae4660e1, type: 3}
+  - {fileID: 5935207823854388183, guid: e88cd00ad376f4544bb9d8d1cff47b1c, type: 3}
+  - {fileID: 8802855613254833398, guid: 98b9a8f071c2a504d9c4044b155c6aee, type: 3}
 --- !u!1 &1670586888
 GameObject:
   m_ObjectHideFlags: 0
@@ -1861,7 +1895,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 8.399963, y: 11.844513}
+  m_AnchoredPosition: {x: 0.000030517578, y: 11.84451}
   m_SizeDelta: {x: 166.70001, y: 43.905}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1750474696
@@ -1906,7 +1940,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1750474697}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1592483367}
+        m_MethodName: DisplayDetonators
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1750474697
 MonoBehaviour:
   m_ObjectHideFlags: 0
