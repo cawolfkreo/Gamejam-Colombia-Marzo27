@@ -96,7 +96,7 @@ public class UIcontroller : MonoBehaviour
                         SearchForMachine(machineName, detonators);
                         break;
                     case 3:
-                        SearchForMachine(machineName, detonators);
+                        SearchForMachine(machineName, cutters);
                         break;
                     default:
                         Honk();

@@ -469,6 +469,60 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7851334594974353444, guid: 971b1cfa843a9624ca13db0aee2eadc0,
+        type: 3}
+      propertyPath: cutters.Array.data[0]
+      value: 
+      objectReference: {fileID: 4902907095031026840, guid: 37ac6029ba442784fab1c90d4bc63bae,
+        type: 3}
+    - target: {fileID: 7851334594974353444, guid: 971b1cfa843a9624ca13db0aee2eadc0,
+        type: 3}
+      propertyPath: detonators.Array.data[0]
+      value: 
+      objectReference: {fileID: 6808865408830389755, guid: 168df932783b2d846a6000bc98bd795e,
+        type: 3}
+    - target: {fileID: 7851334594974353444, guid: 971b1cfa843a9624ca13db0aee2eadc0,
+        type: 3}
+      propertyPath: rollers.Array.data[0]
+      value: 
+      objectReference: {fileID: 6260939657967398886, guid: fde80cdcee2e35b4fa0e78162e0f61f0,
+        type: 3}
+    - target: {fileID: 7851334594974353444, guid: 971b1cfa843a9624ca13db0aee2eadc0,
+        type: 3}
+      propertyPath: rollers.Array.data[1]
+      value: 
+      objectReference: {fileID: 7293001320176210160, guid: 885fb8ff1d8e60b4c9a5a93a95367895,
+        type: 3}
+    - target: {fileID: 7851334594974353444, guid: 971b1cfa843a9624ca13db0aee2eadc0,
+        type: 3}
+      propertyPath: rollers.Array.data[2]
+      value: 
+      objectReference: {fileID: 5089234051870350610, guid: 38c8048d5dd5c9b41b11cfe043344a9f,
+        type: 3}
+    - target: {fileID: 7851334594974353444, guid: 971b1cfa843a9624ca13db0aee2eadc0,
+        type: 3}
+      propertyPath: detonators.Array.data[1]
+      value: 
+      objectReference: {fileID: 2999568065507944591, guid: 10990689b367a12439f34090f1bafa7c,
+        type: 3}
+    - target: {fileID: 7851334594974353444, guid: 971b1cfa843a9624ca13db0aee2eadc0,
+        type: 3}
+      propertyPath: cutters.Array.data[1]
+      value: 
+      objectReference: {fileID: 2732806270304726302, guid: bf472fe211ad48d4f8a9a41ff024f355,
+        type: 3}
+    - target: {fileID: 7851334594974353444, guid: 971b1cfa843a9624ca13db0aee2eadc0,
+        type: 3}
+      propertyPath: detonators.Array.data[2]
+      value: 
+      objectReference: {fileID: 175393656634949807, guid: ee356f8ab8426ac44bc4b5c2b9814117,
+        type: 3}
+    - target: {fileID: 7851334594974353444, guid: 971b1cfa843a9624ca13db0aee2eadc0,
+        type: 3}
+      propertyPath: cutters.Array.data[2]
+      value: 
+      objectReference: {fileID: 7262026672389703134, guid: 4b2da7a685f861e4eb6b34273b10b74e,
+        type: 3}
     - target: {fileID: 7851334595201761232, guid: 971b1cfa843a9624ca13db0aee2eadc0,
         type: 3}
       propertyPath: m_Camera
