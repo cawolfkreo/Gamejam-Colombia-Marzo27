@@ -40,6 +40,7 @@ public class GridManager : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
+        this.gameObject.SetActive(true);
         Vector3 size = floor.GetComponent<Renderer>().bounds.size;
 
         GridLines = new GameObject("GridLines");
@@ -76,6 +77,7 @@ public class GridManager : MonoBehaviour
         }
         else
         {
+            Debug.Log("WHYY");
             GridLines.gameObject.SetActive(false);
         }
     }
