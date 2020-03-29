@@ -670,9 +670,12 @@
     <Compile Include="Assets\Scripts\GridManager.cs" />
     <Compile Include="Assets\Scripts\LampFalling.cs" />
     <Compile Include="Assets\Scripts\LineRenderManager.cs" />
+    <Compile Include="Assets\Scripts\MainMenuManager.cs" />
+    <Compile Include="Assets\Scripts\StatusManager.cs" />
     <Compile Include="Assets\Scripts\UIcontroller.cs" />
     <Compile Include="Assets\SparkController.cs" />
     <Compile Include="Assets\SwitchScenes.cs" />
+    <Compile Include="Assets\basicHeight.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\3D objects\Smartphone\StandardColorMask.shader" />
