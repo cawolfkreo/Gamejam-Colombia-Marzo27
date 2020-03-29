@@ -88,7 +88,7 @@ public class Grid
 
     private void drawGridLine(Vector3 origin, Vector3 target)
     {
-        LineRenderManager lineManager = gridManager.createLineManager();
+        LineRenderManager lineManager = gridManager.CreateLineManager();
 
         lineManager.DrawLine(origin, target);
     }

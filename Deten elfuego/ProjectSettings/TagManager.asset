@@ -6,6 +6,11 @@ TagManager:
   tags:
   - Piso
   - MapObjectParent
+  - Detonador
+  - FxTemporaire
+  - Cortador
+  - Rodador
+  - UIMachine
   layers:
   - Default
   - TransparentFX

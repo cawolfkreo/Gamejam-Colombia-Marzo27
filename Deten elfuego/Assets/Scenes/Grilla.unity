@@ -2070,6 +2070,11 @@ PrefabInstance:
       propertyPath: floor
       value: 
       objectReference: {fileID: 1249444402}
+    - target: {fileID: 3881062826608118626, guid: c7e8b91e43b4bf941a3f97a4478ada50,
+        type: 3}
+      propertyPath: UIController
+      value: 
+      objectReference: {fileID: 1592483367}
     - target: {fileID: 3881062826608118627, guid: c7e8b91e43b4bf941a3f97a4478ada50,
         type: 3}
       propertyPath: m_LocalPosition.x
