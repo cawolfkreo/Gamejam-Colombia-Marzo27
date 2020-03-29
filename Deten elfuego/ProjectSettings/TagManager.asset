@@ -7,7 +7,14 @@ TagManager:
   - Piso
   - lamp
   - book
+<<<<<<< HEAD
   - charger
+=======
+  - FxTemporaire
+  - MapObject
+  - MapObjectParent
+  - GridLines
+>>>>>>> 8f7f15d073808d8cabad6358c7010094ba48d65a
   layers:
   - Default
   - TransparentFX

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GridManager : MonoBehaviour
 {
@@ -37,12 +38,13 @@ public class GridManager : MonoBehaviour
     private GameObject GridLines;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         Vector3 size = floor.GetComponent<Renderer>().bounds.size;
 
         GridLines = new GameObject("GridLines");
         GridLines.transform.parent = transform;
+        GridLines.tag = "GridLines";
 
         cellSize = size.x / (float)numXCells;
 
@@ -57,22 +59,53 @@ public class GridManager : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            if (isASuccesHit)
+            if (isASuccesHit && SceneManager.GetActiveScene().name != "MainScene")
             {
                 Vector3 position4Object = grid.GetWorldPositionCloserToCell(mousePosition);
                 position4Object.y += 0.5f;
-                AddOrRemoveObjectFromWorld(mousePosition, position4Object);
+                AddObjectFromWorld(mousePosition, position4Object);
+            }
+        }
+        else if(Input.GetMouseButton(1) && SceneManager.GetActiveScene().name != "MainScene")
+        {
+
+            RemoveObjectFromWorld(mousePosition);
+
+        }
+        foreach(Transform child in this.gameObject.transform)
+        {
+            if(child.tag == "GridLines" && SceneManager.GetActiveScene().name == "MainScene")
+            {
+                child.gameObject.SetActive(false);
+            }
+            else
+            {
+                child.gameObject.SetActive(true);
             }
         }
     }
 
-    private void AddOrRemoveObjectFromWorld(Vector3 mousePosition, Vector3 position4Object)
+    private void AddObjectFromWorld(Vector3 mousePosition, Vector3 position4Object)
     {
-        if (grid.SetGridObject(mousePosition, cubo))
+        GameObject createdObject = Instantiate(cubo, position4Object, Quaternion.identity);
+        if (grid.SetGridObject(mousePosition, createdObject))
         {
             //main deme el nuevo objeto
-            GameObject createdObject = Instantiate(cubo, position4Object, Quaternion.identity);
             createdObject.transform.parent = gridPosition.transform;
+        }
+        else
+        {
+            Destroy(createdObject);
+        }
+    }
+
+    private void RemoveObjectFromWorld(Vector3 mousePosition)
+    {
+        var objectToDelete = grid.getObject(mousePosition);
+        if(objectToDelete.tag != "MapObjectParent" )
+        {
+            Destroy(objectToDelete);
+            grid.DeleteObject(mousePosition);
         }
     }
 
@@ -107,4 +140,6 @@ public class GridManager : MonoBehaviour
 
         return line.GetComponent<LineRenderManager>();
     }
+
+
 }

@@ -1,5 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+<<<<<<< HEAD
 # Visual Studio 2017
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityEngine.TestRunner", "UnityEngine.TestRunner.csproj", "{E08C0643-0A13-BF9B-F68E-2FDBBB855F02}"
 EndProject
@@ -36,6 +37,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.CollabProxy.Editor", "Unity.CollabProxy.Editor.csproj", "{C12CEEC6-100C-58A2-DE36-314E4DE5E40B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.VSCode.Editor", "Unity.VSCode.Editor.csproj", "{F37EB8D3-595B-2A8E-9D57-98253E4F534B}"
+=======
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{F5AE75B7-FB22-7D5F-F2D2-CDDA10C13D8C}"
+>>>>>>> 8f7f15d073808d8cabad6358c7010094ba48d65a
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.ShaderGraph.Utilities", "Unity.ShaderGraph.Utilities.csproj", "{507A8801-B0FA-F6F6-DC0C-DDCF43D66414}"
 EndProject
@@ -45,6 +50,7 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+<<<<<<< HEAD
 		{E08C0643-0A13-BF9B-F68E-2FDBBB855F02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E08C0643-0A13-BF9B-F68E-2FDBBB855F02}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E08C0643-0A13-BF9B-F68E-2FDBBB855F02}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -121,6 +127,16 @@ Global
 		{507A8801-B0FA-F6F6-DC0C-DDCF43D66414}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{507A8801-B0FA-F6F6-DC0C-DDCF43D66414}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{507A8801-B0FA-F6F6-DC0C-DDCF43D66414}.Release|Any CPU.Build.0 = Release|Any CPU
+=======
+		{F5AE75B7-FB22-7D5F-F2D2-CDDA10C13D8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5AE75B7-FB22-7D5F-F2D2-CDDA10C13D8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5AE75B7-FB22-7D5F-F2D2-CDDA10C13D8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5AE75B7-FB22-7D5F-F2D2-CDDA10C13D8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08A9E9E3-58A9-5A24-179F-3CD6255CCCBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08A9E9E3-58A9-5A24-179F-3CD6255CCCBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08A9E9E3-58A9-5A24-179F-3CD6255CCCBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08A9E9E3-58A9-5A24-179F-3CD6255CCCBA}.Release|Any CPU.Build.0 = Release|Any CPU
+>>>>>>> 8f7f15d073808d8cabad6358c7010094ba48d65a
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

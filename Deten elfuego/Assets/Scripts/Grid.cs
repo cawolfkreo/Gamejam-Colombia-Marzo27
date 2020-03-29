@@ -152,4 +152,27 @@ public class Grid
         }
     }
 
+    public GameObject getObject(Vector3 position )
+    {
+        int x, y;
+        GetXY(position,out x,out y);
+        return GetGridObject(x, y);
+    }
+    public void DeleteObject(Vector3 position)
+    {
+        int x, y;
+        GetXY(position, out x, out y);
+        RemoveGridObject(x, y);
+
+    }
+
+    private void RemoveGridObject(int x, int y)
+    {
+        if (x >= 0 && y >= 0 && x < width && y < height)
+        {
+            gridArray[x, y] = null;
+        }
+        
+    }
+
 }

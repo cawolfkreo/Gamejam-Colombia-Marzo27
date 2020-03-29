@@ -10708,6 +10708,7 @@ MonoBehaviour:
   fire1: {fileID: 1232494055}
   fire2: {fileID: 1035340134}
   fire3: {fileID: 1154992085}
+  fireMaximum: {fileID: 657005300}
 --- !u!65 &758932843
 BoxCollider:
   m_ObjectHideFlags: 0
