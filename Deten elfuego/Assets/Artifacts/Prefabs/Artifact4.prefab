@@ -555,7 +555,7 @@ GameObject:
   - component: {fileID: 5367103595901793575}
   m_Layer: 0
   m_Name: Artifact4
-  m_TagString: Untagged
+  m_TagString: ArtifactTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -626,8 +626,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.39832672, y: 0.5476253, z: 0.0850423}
-  m_Center: {x: -0.008045539, y: 0.22618735, z: -0.25679395}
+  m_Size: {x: 0.28317675, y: 0.51371217, z: 0.04734263}
+  m_Center: {x: -0.06562053, y: 0.24314392, z: -0.20822798}
 --- !u!54 &5367103595901793575
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1194,6 +1194,7 @@ GameObject:
   - component: {fileID: 3276301184828683349}
   - component: {fileID: 1767490405485669540}
   - component: {fileID: 2545581184984795199}
+  - component: {fileID: 1344484477130747972}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Detonador
@@ -1225,7 +1226,7 @@ SphereCollider:
   m_GameObject: {fileID: 8373839476162699139}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 0.02
   m_Center: {x: 0, y: 0, z: 0}
@@ -1243,6 +1244,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   powPSys: {fileID: 8546716727566560043}
   animator: {fileID: 0}
+--- !u!65 &1344484477130747972
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8373839476162699139}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.38354096, y: 0.3482281, z: 0.07092467}
+  m_Center: {x: -0.008381173, y: -0.020147592, z: -0.0040038973}
 --- !u!1001 &3917591797244948717
 PrefabInstance:
   m_ObjectHideFlags: 0
