@@ -80,7 +80,7 @@ public class GridManager : MonoBehaviour
     {
         Vector3 position4Object = grid.GetWorldPositionCloserToCell(position);
         position4Object.y += 0.5f;
-        grid.SetGridObject(mousePosition, objectToAdd);
+        grid.SetGridObject(position4Object, objectToAdd);
     }
 
     private bool GetMouseWorldPosition(Vector3 screenPosition, Camera worldCamera, out Vector3 position)

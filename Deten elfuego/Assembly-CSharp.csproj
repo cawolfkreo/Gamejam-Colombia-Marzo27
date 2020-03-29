@@ -55,8 +55,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\AddConstantVelocity.cs" />
+     <Compile Include="Assets\ChainBooks.cs" />
+     <Compile Include="Assets\ChainFour.cs" />
+     <Compile Include="Assets\ChainSecond.cs" />
+     <Compile Include="Assets\ChainThird.cs" />
      <Compile Include="Assets\Scripts\Grid.cs" />
      <Compile Include="Assets\Scripts\GridManager.cs" />
+     <Compile Include="Assets\Scripts\LampFalling.cs" />
      <Compile Include="Assets\Scripts\LineRenderManager.cs" />
      <None Include="Assets\3D objects\Smartphone\StandardColorMask.shader" />
  <Reference Include="Unity.Timeline.Editor">
