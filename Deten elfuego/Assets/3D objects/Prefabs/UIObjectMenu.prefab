@@ -577,7 +577,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7851334594974353444}
+      - m_Target: {fileID: 0}
         m_MethodName: DisplayRollers
         m_Mode: 1
         m_Arguments:
@@ -977,7 +977,6 @@ GameObject:
   - component: {fileID: 7851334594974353447}
   - component: {fileID: 7851334594974353445}
   - component: {fileID: 7851334594974353446}
-  - component: {fileID: 7851334594974353444}
   m_Layer: 0
   m_Name: PanelMachineSelect
   m_TagString: Untagged
@@ -1045,32 +1044,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &7851334594974353444
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7851334594974353440}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5bba7e777d09f094e98a9a69839efc2e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rollers:
-  - {fileID: 8802855613254833398, guid: 98b9a8f071c2a504d9c4044b155c6aee, type: 3}
-  - {fileID: 5935207823854388183, guid: e88cd00ad376f4544bb9d8d1cff47b1c, type: 3}
-  - {fileID: 4991821417585412055, guid: b0e189afc03a8b54d9d917eeae4660e1, type: 3}
-  detonators:
-  - {fileID: 5935207823854388183, guid: e88cd00ad376f4544bb9d8d1cff47b1c, type: 3}
-  - {fileID: 4991821417585412055, guid: b0e189afc03a8b54d9d917eeae4660e1, type: 3}
-  - {fileID: 8802855613254833398, guid: 98b9a8f071c2a504d9c4044b155c6aee, type: 3}
-  cutters:
-  - {fileID: 4991821417585412055, guid: b0e189afc03a8b54d9d917eeae4660e1, type: 3}
-  - {fileID: 8802855613254833398, guid: 98b9a8f071c2a504d9c4044b155c6aee, type: 3}
-  - {fileID: 5935207823854388183, guid: e88cd00ad376f4544bb9d8d1cff47b1c, type: 3}
-  deltaAngle: 5.7
-  speed: 13.6
 --- !u!1 &7851334595022610199
 GameObject:
   m_ObjectHideFlags: 0
@@ -1324,7 +1297,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7851334594974353444}
+      - m_Target: {fileID: 0}
         m_MethodName: DisplayCutters
         m_Mode: 1
         m_Arguments:
@@ -1676,7 +1649,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7851334594974353444}
+      - m_Target: {fileID: 0}
         m_MethodName: DisplayDetonators
         m_Mode: 1
         m_Arguments:
