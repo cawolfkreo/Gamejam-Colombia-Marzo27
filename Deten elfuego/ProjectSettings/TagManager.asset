@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Piso
   - lamp
+  - book
   layers:
   - Default
   - TransparentFX
