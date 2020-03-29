@@ -44,8 +44,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.40537408, y: 0.060867053, z: 0.21257244}
-  m_Center: {x: 0.04648068, y: -0.0011384222, z: -0.0079575395}
+  m_Size: {x: 0.26185206, y: 0.060867053, z: 0.21257244}
+  m_Center: {x: -0.025280444, y: -0.0011384222, z: -0.0079575395}
 --- !u!1 &4902907094929985839
 GameObject:
   m_ObjectHideFlags: 0
@@ -140,7 +140,7 @@ GameObject:
   - component: {fileID: 6397137271169865476}
   m_Layer: 0
   m_Name: Artifact1
-  m_TagString: Untagged
+  m_TagString: ArtifactTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

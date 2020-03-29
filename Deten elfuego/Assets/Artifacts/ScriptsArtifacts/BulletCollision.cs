@@ -22,7 +22,6 @@ public class BulletCollision : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
- 
         powPSys.Play();
     }
 }

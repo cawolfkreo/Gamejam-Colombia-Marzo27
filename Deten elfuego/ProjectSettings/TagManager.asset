@@ -6,6 +6,11 @@ TagManager:
   tags:
   - Piso
   - MapObjectParent
+  - Cortador
+  - Detonador
+  - FxTemporaire
+  - Rodador
+  - ArtifactTrigger
   layers:
   - Default
   - TransparentFX

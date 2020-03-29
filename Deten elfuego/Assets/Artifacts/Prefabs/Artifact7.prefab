@@ -520,7 +520,7 @@ GameObject:
   - component: {fileID: 1203019994448042689}
   m_Layer: 0
   m_Name: Artifact7
-  m_TagString: Untagged
+  m_TagString: ArtifactTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -577,8 +577,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.3826981, y: 0.5200373, z: 0.054438233}
-  m_Center: {x: -0.016294912, y: 0.23998135, z: -0.16309297}
+  m_Size: {x: 0.3826981, y: 0.35927922, z: 0.38056082}
+  m_Center: {x: -0.016294912, y: 0.15960231, z: -0.00003167987}
 --- !u!114 &6120822577380580351
 MonoBehaviour:
   m_ObjectHideFlags: 0
