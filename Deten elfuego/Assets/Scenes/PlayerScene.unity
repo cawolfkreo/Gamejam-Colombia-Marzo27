@@ -1165,7 +1165,7 @@ GameObject:
   - component: {fileID: 745031818}
   m_Layer: 0
   m_Name: CarActivationPlane
-  m_TagString: MapObject
+  m_TagString: MapObjectParent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1969,7 +1969,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0.21188577, y: -0.37510845, z: 0.08849907, w: 0.89809024}
-  m_LocalPosition: {x: 11.59, y: 17.83, z: -14.85}
+  m_LocalPosition: {x: 15.02, y: 20.03, z: -17.65}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3117,7 +3117,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 104078, guid: 57a32613b8338fb46b75889d19358690, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: MapObjectParent
       objectReference: {fileID: 0}
     - target: {fileID: 491612, guid: 57a32613b8338fb46b75889d19358690, type: 3}
       propertyPath: m_LocalPosition.x

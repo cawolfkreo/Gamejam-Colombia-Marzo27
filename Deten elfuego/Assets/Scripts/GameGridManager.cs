@@ -10,16 +10,16 @@ public class GameGridManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("test");
+ 
         var mapObjects = GameObject.FindGameObjectsWithTag("MapObjectParent");
 
         foreach (GameObject mapObject in mapObjects)
         {
-            Debug.Log(mapObject.name);
             foreach (Transform child in mapObject.transform)
             {
                 if(child.tag == "MapObject")
                 {
+                    
                     gridManager.AddObject(child.transform.position, mapObject);
                 }
             }
