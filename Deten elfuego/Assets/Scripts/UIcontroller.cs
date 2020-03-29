@@ -16,8 +16,16 @@ public class UIcontroller : MonoBehaviour
     [SerializeField]
     private List<GameObject> cutters;
 
+    //The amount to change the angle
+    [SerializeField, Range(0, 20)]
+    private float deltaAngle;
+
+    //The speed for the rotation.
+    [SerializeField, Range(0, 20)]
+    private float speed;
+
     //The position for the machines.
-    private List<GameObject> machinesPositions;
+    private List<Transform> machinesPositions;
 
     //The objects created for the UI.
     private List<GameObject> createdObjects;
@@ -27,16 +35,25 @@ public class UIcontroller : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        machinesPositions = new List<GameObject>();
+        machinesPositions = new List<Transform>();
         createdObjects = new List<GameObject>();
 
         store = GameObject.Find("store");
 
         gameObject.SetActive(false);
 
-        for (int i = 0; i < 3; ++i)
+        for (int i = 1; i <= 3; ++i)
         {
-            machinesPositions.Add(GameObject.Find("Machine" + i));
+            machinesPositions.Add(transform.Find("Machine" + i));
+        }
+    }
+
+    private void Update()
+    {
+        Vector3 rotation = new Vector3(0f, deltaAngle, deltaAngle);
+        foreach(GameObject machine in createdObjects)
+        {
+            machine.transform.Rotate(rotation * Time.deltaTime * speed);
         }
     }
 
@@ -71,12 +88,15 @@ public class UIcontroller : MonoBehaviour
         foreach (GameObject prefab in objectsToDisplay)
         {
             objectToSet = Instantiate(prefab);
-
-            objectToSet.transform.position = machinesPositions[i].transform.position;
+            createdObjects.Add(objectToSet);
 
             objectToSet.transform.parent = store.transform;
 
-            createdObjects.Add(objectToSet);
+            objectToSet.transform.position = machinesPositions[i].position;
+            objectToSet.transform.rotation = machinesPositions[i].rotation;
+
+            objectToSet.transform.localScale *= 20;
+            
             ++i;
         }
     }
