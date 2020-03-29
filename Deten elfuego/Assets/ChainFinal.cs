@@ -6,7 +6,7 @@ public class ChainFinal : MonoBehaviour
 {
     [SerializeField]
     private Animator animation;
-
+    
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "book")
