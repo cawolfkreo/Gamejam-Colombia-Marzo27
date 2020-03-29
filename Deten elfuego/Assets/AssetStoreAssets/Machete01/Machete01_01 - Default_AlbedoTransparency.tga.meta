@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Deten elfuego/Assets/Original Wood Textures/Wood Texture 04/Wood Texture 04 diffuse.tga.meta
+guid: 0f50783611ce99f46b89a8b1f541854e
+timeCreated: 1473370533
+=======
 guid: da7cf918077e8b944ad9ca5bb1184828
 timeCreated: 1479274917
+>>>>>>> 36229d8cded03c66e0dafdebb795a586e058071e:Deten elfuego/Assets/AssetStoreAssets/Machete01/Machete01_01 - Default_AlbedoTransparency.tga.meta
 licenseType: Store
 TextureImporter:
   fileIDToRecycleName: {}

@@ -14,7 +14,7 @@ public class GridManager : MonoBehaviour
 
     //The size a single cell is going to have.
     private float cellSize;
-    
+
     //The grid
     private Grid grid;
 
@@ -26,17 +26,27 @@ public class GridManager : MonoBehaviour
     [SerializeField]
     private GameObject floor;
 
+    //TEMPORAL: El objeto que de momento se pone al hacer click.
     [SerializeField]
     private GameObject cubo;
+
+    //The line manager prefab
+    [SerializeField]
+    private GameObject LinePrefab;
+
+    private GameObject GridLines;
 
     // Start is called before the first frame update
     void Start()
     {
         Vector3 size = floor.GetComponent<Renderer>().bounds.size;
 
-        cellSize = size.x / (float) numXCells;
+        GridLines = new GameObject("GridLines");
+        GridLines.transform.parent = transform;
 
-        grid = new Grid(numXCells, numYCells, cellSize, gridPosition.position);
+        cellSize = size.x / (float)numXCells;
+
+        grid = new Grid(numXCells, numYCells, cellSize, gridPosition.position, this);
     }
 
     // Update is called once per frame
@@ -48,11 +58,11 @@ public class GridManager : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             if (isASuccesHit)
-            {                
+            {
                 Vector3 position4Object = grid.GetWorldPositionCloserToCell(mousePosition);
                 position4Object.y += 0.5f;
-                AddOrRemoveObjectFromWorld(mousePosition, position4Object);              
-            }            
+                AddOrRemoveObjectFromWorld(mousePosition, position4Object);
+            }
         }
     }
 
@@ -64,6 +74,13 @@ public class GridManager : MonoBehaviour
             GameObject createdObject = Instantiate(cubo, position4Object, Quaternion.identity);
             createdObject.transform.parent = gridPosition.transform;
         }
+    }
+
+    public void AddObject(Vector3 position, GameObject objectToAdd)
+    {
+        Vector3 position4Object = grid.GetWorldPositionCloserToCell(position);
+        position4Object.y += 0.5f;
+        grid.SetGridObject(position4Object, objectToAdd);
     }
 
     private bool GetMouseWorldPosition(Vector3 screenPosition, Camera worldCamera, out Vector3 position)
@@ -80,5 +97,14 @@ public class GridManager : MonoBehaviour
             position = default;
             return false;
         }
+    }
+
+    public LineRenderManager createLineManager()
+    {
+        GameObject line = Instantiate(LinePrefab);
+
+        line.transform.parent = GridLines.transform;
+
+        return line.GetComponent<LineRenderManager>();
     }
 }

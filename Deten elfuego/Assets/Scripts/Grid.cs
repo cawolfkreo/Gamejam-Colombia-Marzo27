@@ -10,6 +10,7 @@ public class Grid
     //Amount of rows the grid is going to have.
     private int height;
 
+    //The size of all cells.
     private float cellSize;
 
     //The array for the objects inside the grid.
@@ -18,35 +19,78 @@ public class Grid
     //The origin position to render the grid.
     private Vector3 originPosition;
 
+    //This is the size of each gap.
+    private GridManager gridManager;
+
+    //Wether or not this is on debug.
+    private bool debug;
+
     //Creates the grid in the world.
-    public Grid(int width, int height, float cellSize, Vector3 originPosition)
+    public Grid(int width, int height, float cellSize, Vector3 originPosition, GridManager gridManager)
     {
         this.width = width;
         this.height = height;
         this.cellSize = cellSize;
         this.originPosition = originPosition;
+        this.gridManager = gridManager;
+        debug = false;
 
         gridArray = new GameObject[this.width, this.height];
 
+        DrawGrid();
+    }      
+
+    private void DrawGrid()
+    {
         Vector3 cellPositionX0Y0;
         Vector3 cellPositionX0Y1;
         Vector3 cellPositionX1Y0;
-
-        for (int i = 0; i < gridArray.GetLength(0); ++i)
+        Vector3 finalPoint = GetWorldPosition(width, height);
+        if (debug)
         {
-            for (int j = 0; j < gridArray.GetLength(1); ++j)
+            for (int i = 0; i < gridArray.GetLength(0); ++i)
             {
-                cellPositionX0Y0 = GetWorldPosition(i, j);
-                cellPositionX0Y1 = GetWorldPosition(i, j + 1);
-                cellPositionX1Y0 = GetWorldPosition(i + 1, j);
+                for (int j = 0; j < gridArray.GetLength(1); ++j)
+                {
+                    cellPositionX0Y0 = GetWorldPosition(i, j);
+                    cellPositionX0Y1 = GetWorldPosition(i, j + 1);
+                    cellPositionX1Y0 = GetWorldPosition(i + 1, j);
 
-                Debug.DrawLine(cellPositionX0Y0, cellPositionX0Y1, Color.white, 100f);
-                Debug.DrawLine(cellPositionX0Y0, cellPositionX1Y0, Color.white, 100f);
+                    Debug.DrawLine(cellPositionX0Y0, cellPositionX0Y1, Color.white, 100f);
+                    Debug.DrawLine(cellPositionX0Y0, cellPositionX1Y0, Color.white, 100f);
+                }
             }
-        }
 
-        Debug.DrawLine(GetWorldPosition(0, height), GetWorldPosition(width, height), Color.white, 100f);
-        Debug.DrawLine(GetWorldPosition(width, 0), GetWorldPosition(width, height), Color.white, 100f);
+            Debug.DrawLine(GetWorldPosition(0, height), GetWorldPosition(width, height), Color.white, 100f);
+            Debug.DrawLine(GetWorldPosition(width, 0), GetWorldPosition(width, height), Color.white, 100f);
+        }
+        else
+        {
+            for (int i = 0; i < gridArray.GetLength(0); ++i)
+            {
+                cellPositionX0Y0 = GetWorldPosition(i, 0);
+                cellPositionX0Y1 = GetWorldPosition(i, width);
+                drawGridLine(cellPositionX0Y0, cellPositionX0Y1);
+            }
+
+            for (int j = 0; j < gridArray.GetLength(1); ++j)
+            { 
+                cellPositionX0Y0 = GetWorldPosition(0, j);
+                cellPositionX1Y0 = GetWorldPosition(height, j);
+                drawGridLine(cellPositionX0Y0, cellPositionX1Y0);
+            }
+
+            drawGridLine(GetWorldPosition(0, height), finalPoint);
+            drawGridLine(GetWorldPosition(width, 0), finalPoint);
+        }
+        
+    }
+
+    private void drawGridLine(Vector3 origin, Vector3 target)
+    {
+        LineRenderManager lineManager = gridManager.createLineManager();
+
+        lineManager.DrawLine(origin, target);
     }
 
     //Returns the world position for a given element 

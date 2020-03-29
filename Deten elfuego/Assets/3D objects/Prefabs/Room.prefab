@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1545333020525395834}
   - component: {fileID: 6396910963861902147}
   - component: {fileID: 8894684333271702959}
-  - component: {fileID: 7034922076743654837}
+  - component: {fileID: 4940597456975071219}
   m_Layer: 0
   m_Name: Room
   m_TagString: Piso
@@ -84,8 +84,8 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &7034922076743654837
-MeshCollider:
+--- !u!65 &4940597456975071219
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -94,10 +94,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+  serializedVersion: 2
+  m_Size: {x: 10, y: 2.220446e-16, z: 10}
+  m_Center: {x: 0, y: 0.04, z: 0}
 --- !u!1 &4435961288549478837
 GameObject:
   m_ObjectHideFlags: 0
@@ -407,7 +406,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4435961290347294022}
   m_LocalRotation: {x: -0.5, y: -0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: -4.945, y: 1.35, z: 0.14}
+  m_LocalPosition: {x: -4.945, y: 1.35, z: -0.03}
   m_LocalScale: {x: 1.0118439, y: 0.5, z: 0.26702923}
   m_Children: []
   m_Father: {fileID: 1545333020525395834}
