@@ -37,6 +37,7 @@ public class UIcontroller : MonoBehaviour
     //This saves the currently selected machine.
     private GameObject selectedMachine;
 
+
     /**
      * This Attribute saves wich of the three lists of machine types is currently being used.
      * 0 -> No list is being used.
@@ -46,34 +47,39 @@ public class UIcontroller : MonoBehaviour
      */
     private short selectedList;
 
-    // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         machinesPositions = new List<Transform>();
         createdObjects = new List<GameObject>();
-
         store = GameObject.Find("store");
-        
+
         selectedList = 0;
         selectedMachine = default;
 
-    gameObject.SetActive(false);
+        gameObject.SetActive(false);
 
         for (int i = 1; i <= 3; ++i)
         {
             machinesPositions.Add(transform.Find("Machine" + i));
         }
     }
+    // Start is called before the first frame update
+    void Start()
+    {
+
+        
+    }
 
     private void Update()
     {
-        Vector3 rotation = new Vector3(0f, deltaAngle, deltaAngle);
-        foreach(GameObject machine in createdObjects)
+        Vector3 rotation = new Vector3(0f, 0f, 0f);
+        foreach (GameObject machine in createdObjects)
         {
             machine.transform.Rotate(rotation * Time.deltaTime * speed);
         }
 
         CheckMachineClick();
+
     }
 
     private void CheckMachineClick()
@@ -147,6 +153,7 @@ public class UIcontroller : MonoBehaviour
 
     private void DisplayObjects(List<GameObject> objectsToDisplay, short selected)
     {
+        Debug.Log(objectsToDisplay.Count);
         selectedList = selected;
         gameObject.SetActive(true);
         selectedMachine = default;

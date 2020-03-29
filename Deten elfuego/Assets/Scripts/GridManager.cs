@@ -99,9 +99,9 @@ public class GridManager : MonoBehaviour
                     pos.y += height;
                     deltaY = pos;
                 }
-            }             
-            
-            position4Object.y = size.y / 2;
+            }
+            //position4Object.y += size.y / 2;
+            position4Object.y = gridPosition.position.y;
             position4Object.y += deltaY.y;
 
             GameObject createdObject = Instantiate(prefab, position4Object, prefab.transform.rotation);
