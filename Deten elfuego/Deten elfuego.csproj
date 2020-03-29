@@ -614,14 +614,6 @@
       <Project>{F37EB8D3-595B-2A8E-9D57-98253E4F534B}</Project>
       <Name>Unity.VSCode.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.RenderPipelines.Core.Editor.csproj">
-      <Project>{A1B3D246-CBF8-5C7A-7D07-73F07D9A0972}</Project>
-      <Name>Unity.RenderPipelines.Core.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.RenderPipelines.Core.Runtime.csproj">
-      <Project>{DF88BCE8-B64F-969D-3C39-F0C65EF04F6B}</Project>
-      <Name>Unity.RenderPipelines.Core.Runtime</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.Editor.csproj">
       <Project>{3A848AB7-9891-EDDA-D555-BF184C2F81F4}</Project>
       <Name>Unity.TextMeshPro.Editor</Name>
@@ -642,18 +634,6 @@
       <Project>{C540080A-BED7-978E-DDFC-EE09E5DBB722}</Project>
       <Name>Unity.Rider.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.csproj">
-      <Project>{114AAB78-0DA4-48AB-A359-9E0515221173}</Project>
-      <Name>Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.ShaderGraph.Editor.csproj">
-      <Project>{097081EC-B172-781E-F676-D45E858A96D6}</Project>
-      <Name>Unity.ShaderGraph.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.RenderPipelines.Core.ShaderLibrary.csproj">
-      <Project>{21FE3B2C-E13B-425A-BFBA-789779C1B460}</Project>
-      <Name>Unity.RenderPipelines.Core.ShaderLibrary</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.csproj">
       <Project>{07A21C90-D344-AE1A-8456-9910C203B41A}</Project>
       <Name>Unity.TextMeshPro</Name>
@@ -671,6 +651,7 @@
     <Compile Include="Assets\ChainFour.cs" />
     <Compile Include="Assets\ChainSecond.cs" />
     <Compile Include="Assets\ChainThird.cs" />
+    <Compile Include="Assets\DontDestroy.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_AutoStopLoopedEffect.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_New.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_RandomDir.cs" />
@@ -681,11 +662,20 @@
     <Compile Include="Assets\JMO Assets\Cartoon FX\Scripts\CFX_AutoRotate.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX\Scripts\CFX_LightFlicker.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX\Scripts\CFX_LightIntensityFade.cs" />
+    <Compile Include="Assets\QuickOutline\Scripts\Outline.cs" />
+    <Compile Include="Assets\Scripts\ArtifactProjectileScript.cs" />
+    <Compile Include="Assets\Scripts\ArtifactScript.cs" />
+    <Compile Include="Assets\Scripts\GameGridManager.cs" />
     <Compile Include="Assets\Scripts\Grid.cs" />
     <Compile Include="Assets\Scripts\GridManager.cs" />
     <Compile Include="Assets\Scripts\LampFalling.cs" />
     <Compile Include="Assets\Scripts\LineRenderManager.cs" />
+    <Compile Include="Assets\Scripts\MainMenuManager.cs" />
+    <Compile Include="Assets\Scripts\StatusManager.cs" />
+    <Compile Include="Assets\Scripts\UIcontroller.cs" />
     <Compile Include="Assets\SparkController.cs" />
+    <Compile Include="Assets\SwitchScenes.cs" />
+    <Compile Include="Assets\basicHeight.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\3D objects\Smartphone\StandardColorMask.shader" />
@@ -694,6 +684,27 @@
     <None Include="Assets\JMO Assets\Cartoon FX\CartoonFX Free.txt" />
     <None Include="Assets\JMO Assets\Cartoon FX\Shaders\CFX3 Multiply Color.shader" />
     <None Include="Assets\JMO Assets\Cartoon FX\Shaders\CFXM_MobileParticleAdd_Alpha8.shader" />
+    <None Include="Assets\QuickOutline\Readme.txt" />
+    <None Include="Assets\QuickOutline\Resources\Shaders\OutlineFill.shader" />
+    <None Include="Assets\QuickOutline\Resources\Shaders\OutlineMask.shader" />
+    <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Packages\com.unity.collab-proxy\Editor\Resources\Styles\CollabHistoryCommon.uss" />
     <None Include="Packages\com.unity.collab-proxy\Editor\Resources\Styles\CollabHistoryDark.uss" />
     <None Include="Packages\com.unity.collab-proxy\Editor\Resources\Styles\CollabHistoryLight.uss" />
@@ -703,129 +714,6 @@
     <None Include="Packages\com.unity.ext.nunit\net35\unity-custom\nunit.framework.xml" />
     <None Include="Packages\com.unity.ide.rider\Rider\Editor\com.unity.ide.rider.asmdef" />
     <None Include="Packages\com.unity.ide.vscode\Editor\Unity.com.unity.vscode.Editor.asmdef" />
-    <None Include="Packages\com.unity.render-pipelines.core\Editor\Gizmo\UnlitGizmo.shader" />
-    <None Include="Packages\com.unity.render-pipelines.core\Editor\LookDev\Compositor.shader" />
-    <None Include="Packages\com.unity.render-pipelines.core\Editor\LookDev\CubeToLatlong.shader" />
-    <None Include="Packages\com.unity.render-pipelines.core\Editor\LookDev\DisplayWindow-PersonalSkin.uss" />
-    <None Include="Packages\com.unity.render-pipelines.core\Editor\LookDev\DisplayWindow.uss" />
-    <None Include="Packages\com.unity.render-pipelines.core\Editor\LookDev\Inspectors.uss" />
-    <None Include="Packages\com.unity.render-pipelines.core\Editor\Unity.RenderPipelines.Core.Editor.asmdef" />
-    <None Include="Packages\com.unity.render-pipelines.core\Runtime\Unity.RenderPipelines.Core.Runtime.asmdef" />
-    <None Include="Packages\com.unity.render-pipelines.core\ShaderLibrary\ACES.hlsl" />
-    <None Include="Packages\com.unity.render-pipelines.core\ShaderLibrary\API\D3D11.hlsl" />
-    <None Include="Packages\com.unity.render-pipelines.core\ShaderLibrary\API\GLCore.hlsl" />
-    <None Include="Packages\com.unity.render-pipelines.core\ShaderLibrary\API\GLES2.hlsl" />
-    <None Include="Packages\com.unity.render-pipelines.core\ShaderLibrary\API\GLES3.hlsl" />
-    <None Include="Packages\com.unity.render-pipelines.core\ShaderLibrary\API\Metal.hlsl" />
-    <None Include="Packages\com.unity.render-pipelines.core\ShaderLibrary\API\Switch.hlsl" />
-    <None Include="Packages\com.unity.render-pipelines.core\ShaderLibrary\API\Validate.hlsl" />
-    <None Include="Packages\com.unity.render-pipelines.core\ShaderLibrary\API\Vulkan.hlsl" />
-    <None Include="Packages\com.unity.render-pipelines.core\ShaderLibrary\AreaLighting.hlsl" />
-    <None Include="Packages\com.unity.render-pipelines.core\ShaderLibrary\BC6H.hlsl" />
-    <None Include="Packages\com.unity.render-pipelines.core\ShaderLibrary\BSDF.hlsl" />
-    <None Include="Packages\com.unity.render-pipelines.core\ShaderLibrary\Color.hlsl" />
-    <None Include="Packages\com.unity.render-pipelines.core\ShaderLibrary\Common.hlsl" />
-    <None Include="Packages\com.unity.render-pipelines.core\ShaderLibrary\CommonDeprecated.hlsl" />
-    <None Include="Packages\com.unity.render-pipelines.core\ShaderLibrary\CommonLighting.hlsl" />
-    <None Include="Packages\com.unity.render-pipelines.core\ShaderLibrary\CommonMaterial.hlsl" />
-    <None Include="Packages\com.unity.render-pipelines.core\ShaderLibrary\CommonShadow.hlsl" />
-    <None Include="Packages\com.unity.render-pipelines.core\ShaderLibrary\Debug.hlsl" />
-    <None Include="Packages\com.unity.render-pipelines.core\ShaderLibrary\EntityLighting.hlsl" />
-    <None Include="Packages\com.unity.render-pipelines.core\ShaderLibrary\Filtering.hlsl" />
-    <None Include="Packages\com.unity.render-pipelines.core\ShaderLibrary\GeometricTools.hlsl" />
-    <None Include="Packages\com.unity.render-pipelines.core\ShaderLibrary\ImageBasedLighting.hlsl" />
-    <None Include="Packages\com.unity.render-pipelines.core\ShaderLibrary\Macros.hlsl" />
-    <None Include="Packages\com.unity.render-pipelines.core\ShaderLibrary\NormalSurfaceGradient.hlsl" />
-    <None Include="Packages\com.unity.render-pipelines.core\ShaderLibrary\Packing.hlsl" />
-    <None Include="Packages\com.unity.render-pipelines.core\ShaderLibrary\PerPixelDisplacement.hlsl" />
-    <None Include="Packages\com.unity.render-pipelines.core\ShaderLibrary\PhysicalCamera.hlsl" />
-    <None Include="Packages\com.unity.render-pipelines.core\ShaderLibrary\Random.hlsl" />
-    <None Include="Packages\com.unity.render-pipelines.core\ShaderLibrary\Refraction.hlsl" />
-    <None Include="Packages\com.unity.render-pipelines.core\ShaderLibrary\SDF2D.hlsl" />
-    <None Include="Packages\com.unity.render-pipelines.core\ShaderLibrary\Sampling\Fibonacci.hlsl" />
-    <None Include="Packages\com.unity.render-pipelines.core\ShaderLibrary\Sampling\Hammersley.hlsl" />
-    <None Include="Packages\com.unity.render-pipelines.core\ShaderLibrary\Sampling\SampleUVMapping.hlsl" />
-    <None Include="Packages\com.unity.render-pipelines.core\ShaderLibrary\Sampling\SampleUVMappingInternal.hlsl" />
-    <None Include="Packages\com.unity.render-pipelines.core\ShaderLibrary\Sampling\SampleUVMappingNormalInternal.hlsl" />
-    <None Include="Packages\com.unity.render-pipelines.core\ShaderLibrary\Sampling\Sampling.hlsl" />
-    <None Include="Packages\com.unity.render-pipelines.core\ShaderLibrary\Shadow\ShadowSamplingTent.hlsl" />
-    <None Include="Packages\com.unity.render-pipelines.core\ShaderLibrary\SpaceFillingCurves.hlsl" />
-    <None Include="Packages\com.unity.render-pipelines.core\ShaderLibrary\SpaceTransforms.hlsl" />
-    <None Include="Packages\com.unity.render-pipelines.core\ShaderLibrary\Tessellation.hlsl" />
-    <None Include="Packages\com.unity.render-pipelines.core\ShaderLibrary\Unity.RenderPipelines.Core.ShaderLibrary.asmdef" />
-    <None Include="Packages\com.unity.render-pipelines.core\ShaderLibrary\UnityInstancing.hlsl" />
-    <None Include="Packages\com.unity.render-pipelines.core\ShaderLibrary\Version.hlsl" />
-    <None Include="Packages\com.unity.render-pipelines.core\ShaderLibrary\VolumeRendering.hlsl" />
-    <None Include="Packages\com.unity.render-pipelines.core\Tests\Editor\Unity.RenderPipelines.Core.Editor.Tests.asmdef" />
-    <None Include="Packages\com.unity.render-pipelines.core\Tests\Runtime\Unity.RenderPipelines.Core.Runtime.Tests.asmdef" />
-    <None Include="Packages\com.unity.shadergraph\Editor\Resources\Resizable.uss" />
-    <None Include="Packages\com.unity.shadergraph\Editor\Resources\Selectable.uss" />
-    <None Include="Packages\com.unity.shadergraph\Editor\Resources\Shaders\BlitNoAlpha.shader" />
-    <None Include="Packages\com.unity.shadergraph\Editor\Resources\Shaders\Checkerboard.shader" />
-    <None Include="Packages\com.unity.shadergraph\Editor\Resources\Shaders\FallbackError.shader" />
-    <None Include="Packages\com.unity.shadergraph\Editor\Resources\StickyNote.uss" />
-    <None Include="Packages\com.unity.shadergraph\Editor\Resources\Styles\Blackboard.uss" />
-    <None Include="Packages\com.unity.shadergraph\Editor\Resources\Styles\ColorMode.uss" />
-    <None Include="Packages\com.unity.shadergraph\Editor\Resources\Styles\Controls\BooleanSlotControlView.uss" />
-    <None Include="Packages\com.unity.shadergraph\Editor\Resources\Styles\Controls\ChannelEnumControlView.uss" />
-    <None Include="Packages\com.unity.shadergraph\Editor\Resources\Styles\Controls\ChannelEnumMaskControlView.uss" />
-    <None Include="Packages\com.unity.shadergraph\Editor\Resources\Styles\Controls\ChannelMixerControlView.uss" />
-    <None Include="Packages\com.unity.shadergraph\Editor\Resources\Styles\Controls\ColorControlView.uss" />
-    <None Include="Packages\com.unity.shadergraph\Editor\Resources\Styles\Controls\ColorRGBASlotControlView.uss" />
-    <None Include="Packages\com.unity.shadergraph\Editor\Resources\Styles\Controls\ColorRGBSlotControlView.uss" />
-    <None Include="Packages\com.unity.shadergraph\Editor\Resources\Styles\Controls\CubemapSlotControlView.uss" />
-    <None Include="Packages\com.unity.shadergraph\Editor\Resources\Styles\Controls\DielectricSpecularControlView.uss" />
-    <None Include="Packages\com.unity.shadergraph\Editor\Resources\Styles\Controls\EnumControlView.uss" />
-    <None Include="Packages\com.unity.shadergraph\Editor\Resources\Styles\Controls\EnumConversionControlView.uss" />
-    <None Include="Packages\com.unity.shadergraph\Editor\Resources\Styles\Controls\GradientControlView.uss" />
-    <None Include="Packages\com.unity.shadergraph\Editor\Resources\Styles\Controls\GradientSlotControlView.uss" />
-    <None Include="Packages\com.unity.shadergraph\Editor\Resources\Styles\Controls\IntegerControlView.uss" />
-    <None Include="Packages\com.unity.shadergraph\Editor\Resources\Styles\Controls\MultiFloatControlView.uss" />
-    <None Include="Packages\com.unity.shadergraph\Editor\Resources\Styles\Controls\MultiFloatSlotControlView.uss" />
-    <None Include="Packages\com.unity.shadergraph\Editor\Resources\Styles\Controls\PopupControlView.uss" />
-    <None Include="Packages\com.unity.shadergraph\Editor\Resources\Styles\Controls\ScreenPositionSlotControlView.uss" />
-    <None Include="Packages\com.unity.shadergraph\Editor\Resources\Styles\Controls\SliderControlView.uss" />
-    <None Include="Packages\com.unity.shadergraph\Editor\Resources\Styles\Controls\Texture3DSlotControlView.uss" />
-    <None Include="Packages\com.unity.shadergraph\Editor\Resources\Styles\Controls\TextureArraySlotControlView.uss" />
-    <None Include="Packages\com.unity.shadergraph\Editor\Resources\Styles\Controls\TextureSlotControlView.uss" />
-    <None Include="Packages\com.unity.shadergraph\Editor\Resources\Styles\Controls\ToggleControlView.uss" />
-    <None Include="Packages\com.unity.shadergraph\Editor\Resources\Styles\Controls\UVSlotControlView.uss" />
-    <None Include="Packages\com.unity.shadergraph\Editor\Resources\Styles\GraphEditorView.uss" />
-    <None Include="Packages\com.unity.shadergraph\Editor\Resources\Styles\HlslFunctionView.uss" />
-    <None Include="Packages\com.unity.shadergraph\Editor\Resources\Styles\MasterPreviewView.uss" />
-    <None Include="Packages\com.unity.shadergraph\Editor\Resources\Styles\MaterialGraph.uss" />
-    <None Include="Packages\com.unity.shadergraph\Editor\Resources\Styles\MaterialGraphView.uss" />
-    <None Include="Packages\com.unity.shadergraph\Editor\Resources\Styles\MaterialNodeView.uss" />
-    <None Include="Packages\com.unity.shadergraph\Editor\Resources\Styles\NodeSettings.uss" />
-    <None Include="Packages\com.unity.shadergraph\Editor\Resources\Styles\PixelCacheProfiler.uss" />
-    <None Include="Packages\com.unity.shadergraph\Editor\Resources\Styles\PortInputView.uss" />
-    <None Include="Packages\com.unity.shadergraph\Editor\Resources\Styles\PropertyNameReferenceField.uss" />
-    <None Include="Packages\com.unity.shadergraph\Editor\Resources\Styles\PropertyNodeView.uss" />
-    <None Include="Packages\com.unity.shadergraph\Editor\Resources\Styles\PropertyRow.uss" />
-    <None Include="Packages\com.unity.shadergraph\Editor\Resources\Styles\PropertySheet.uss" />
-    <None Include="Packages\com.unity.shadergraph\Editor\Resources\Styles\ReorderableSlotListView.uss" />
-    <None Include="Packages\com.unity.shadergraph\Editor\Resources\Styles\ShaderGraphBlackboard.uss" />
-    <None Include="Packages\com.unity.shadergraph\Editor\Resources\Styles\ShaderPort.uss" />
-    <None Include="Packages\com.unity.shadergraph\Editor\Resources\Styles\ShaderPropertyView.uss" />
-    <None Include="Packages\com.unity.shadergraph\Editor\Resources\UXML\GraphView\Blackboard.uxml" />
-    <None Include="Packages\com.unity.shadergraph\Editor\Resources\UXML\GraphView\BlackboardField.uxml" />
-    <None Include="Packages\com.unity.shadergraph\Editor\Resources\UXML\GraphView\BlackboardRow.uxml" />
-    <None Include="Packages\com.unity.shadergraph\Editor\Resources\UXML\GraphView\BlackboardSection.uxml" />
-    <None Include="Packages\com.unity.shadergraph\Editor\Resources\UXML\NodeSettings.uxml" />
-    <None Include="Packages\com.unity.shadergraph\Editor\Resources\UXML\PixelCacheProfiler.uxml" />
-    <None Include="Packages\com.unity.shadergraph\Editor\Resources\UXML\Resizable.uxml" />
-    <None Include="Packages\com.unity.shadergraph\Editor\Resources\UXML\StickyNote.uxml" />
-    <None Include="Packages\com.unity.shadergraph\Editor\Templates\PassMesh.template" />
-    <None Include="Packages\com.unity.shadergraph\Editor\Unity.ShaderGraph.Editor.asmdef" />
-    <None Include="Packages\com.unity.shadergraph\Editor\Utilities\Unity.ShaderGraph.Utilities.asmdef" />
-    <None Include="Packages\com.unity.shadergraph\ShaderGraphLibrary\Functions.hlsl" />
-    <None Include="Packages\com.unity.shadergraph\ShaderGraphLibrary\GeometricTools.hlsl" />
-    <None Include="Packages\com.unity.shadergraph\ShaderGraphLibrary\ShaderConfig.cs.hlsl" />
-    <None Include="Packages\com.unity.shadergraph\ShaderGraphLibrary\ShaderVariables.hlsl" />
-    <None Include="Packages\com.unity.shadergraph\ShaderGraphLibrary\ShaderVariablesFunctions.hlsl" />
-    <None Include="Packages\com.unity.shadergraph\ShaderGraphLibrary\ShaderVariablesMatrixDefsLegacyUnity.hlsl" />
-    <None Include="Packages\com.unity.shadergraph\ShaderGraphLibrary\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.asmdef" />
-    <None Include="Packages\com.unity.shadergraph\Tests\Editor\Unity.ShaderGraph.Editor.Tests.asmdef" />
     <None Include="Packages\com.unity.test-framework\UnityEditor.TestRunner\UnityEditor.TestRunner.asmdef" />
     <None Include="Packages\com.unity.test-framework\UnityEngine.TestRunner\UnityEngine.TestRunner.asmdef" />
     <None Include="Packages\com.unity.textmeshpro\Editor Resources\Shaders\TMP_Properties.cginc" />

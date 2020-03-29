@@ -4,32 +4,17 @@ using UnityEngine;
 
 public class LampFalling : MonoBehaviour
 {
+    [SerializeField]
+    private Animator animation;
 
-    // Start is called before the first frame update
-    void Start()
+    private void OnCollisionEnter(Collision collision)
     {
-
-        StartCoroutine(waitTwoSeconds());
-
+        if (collision.gameObject.tag == "hips")
+        {
+            animation = GetComponent<Animator>();
+            animation.Play("lamp falling");
+            Debug.Log("entra al collision");
+        }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-        float speed = 2;
-
-        transform.Rotate(Vector3.forward * speed * Time.deltaTime);
-    }
-
-
-    IEnumerator waitTwoSeconds()
-    {
-        yield return new WaitForSeconds(0);
-
-        float speed = 1000;
-
-        transform.Rotate(Vector3.up * speed * Time.deltaTime);
-
-    }
 }

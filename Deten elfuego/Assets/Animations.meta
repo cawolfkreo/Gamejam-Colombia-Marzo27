@@ -1,8 +1,14 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Deten elfuego/Assets/Animations.meta
 guid: b527b4f35d4cab84c94570e222587557
 folderAsset: yes
 DefaultImporter:
+=======
+guid: 8c52c20abaa73174a81599ded137c48b
+NativeFormatImporter:
+>>>>>>> 27b55f89d02cb98dea903a29c8ecf4480154d505:Deten elfuego/Assets/Player/Drunk Turn.anim.meta
   externalObjects: {}
+  mainObjectFileID: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

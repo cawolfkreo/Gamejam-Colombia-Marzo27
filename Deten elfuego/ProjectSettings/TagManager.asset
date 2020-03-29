@@ -11,6 +11,10 @@ TagManager:
   - Cortador
   - Rodador
   - UIMachine
+  - book
+  - lamp
+  - charger
+  - hips
   layers:
   - Default
   - TransparentFX
