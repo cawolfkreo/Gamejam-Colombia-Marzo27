@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MainMenuManager : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class MainMenuManager : MonoBehaviour
 
     public void MainScene()
     {
-        //TODO: Hacer el manejo para el salto a la escena siguiente.
+        SceneManager.LoadScene("MainScene");
     }
 
     public void Tutorial()
