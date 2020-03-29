@@ -3,6 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class GridManager : MonoBehaviour
 {
+
     //The number of columns the grid is going to have.
     [SerializeField]
     private int numXCells = 10;
@@ -39,6 +40,7 @@ public class GridManager : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
+        this.gameObject.SetActive(true);
         Vector3 size = floor.GetComponent<Renderer>().bounds.size;
 
         GridLines = new GameObject("GridLines");
@@ -75,6 +77,7 @@ public class GridManager : MonoBehaviour
         }
         else
         {
+            Debug.Log("WHYY");
             GridLines.gameObject.SetActive(false);
         }
     }
@@ -84,10 +87,24 @@ public class GridManager : MonoBehaviour
         GameObject prefab = UIController.GetMachinePrefab();
         if (prefab)
         {
+            Vector3 deltaY = new Vector3();
             Vector3 size = prefab.GetComponent<Renderer>().bounds.size;
+            basicHeight bH = prefab.GetComponent<basicHeight>();
+            foreach(Transform p in prefab.transform)
+            {
+                if (bH)
+                {
+                    float height = bH.getHeight();
+                    Vector3 pos = p.position;
+                    pos.y += height;
+                    deltaY = pos;
+                }
+            }             
+            
             position4Object.y = size.y / 2;
+            position4Object.y += deltaY.y;
 
-            GameObject createdObject = Instantiate(prefab, position4Object, Quaternion.identity);
+            GameObject createdObject = Instantiate(prefab, position4Object, prefab.transform.rotation);
             if (grid.SetGridObject(mousePosition, createdObject))
             {
                 createdObject.transform.parent = gridPosition.transform;

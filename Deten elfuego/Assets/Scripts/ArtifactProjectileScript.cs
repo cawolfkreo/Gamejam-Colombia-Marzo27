@@ -23,6 +23,10 @@ public class ArtifactProjectileScript : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        animatorProjectil.enabled = false;
+        if (animatorProjectil.GetBool("triggered") && other.gameObject.tag.Equals("ArtifactTrigger"))
+        {
+            animatorProjectil.enabled = false;
+        }
+        
     }
 }
