@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class GridManager : MonoBehaviour
@@ -27,16 +25,16 @@ public class GridManager : MonoBehaviour
     [SerializeField]
     private GameObject floor;
 
-    //TEMPORAL: El objeto que de momento se pone al hacer click.
-    [SerializeField]
-    private GameObject cubo;
-
     //The line manager prefab
     [SerializeField]
     private GameObject LinePrefab;
 
     //The object responsible for handling the gridlines.
     private GameObject GridLines;
+
+    //This saves the controller for the current UI.
+    [SerializeField]
+    private UIcontroller UIController;
 
     // Start is called before the first frame update
     void Awake()
@@ -53,8 +51,8 @@ public class GridManager : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {  
-        if(SceneManager.GetActiveScene().name != "MainScene")
+    {
+        if (SceneManager.GetActiveScene().name != "MainScene")
         {
             Vector3 mousePosition;
             bool isASuccesHit = GetMouseWorldPosition(Input.mousePosition, Camera.main, out mousePosition);
@@ -80,19 +78,24 @@ public class GridManager : MonoBehaviour
             GridLines.gameObject.SetActive(false);
         }
     }
-
+    
     private void AddObjectFromWorld(Vector3 mousePosition, Vector3 position4Object)
     {
-        GameObject createdObject = Instantiate(cubo, position4Object, Quaternion.identity);
-        if (grid.SetGridObject(mousePosition, createdObject))
+        GameObject prefab = UIController.GetMachinePrefab();
+        if (prefab)
         {
-            //TODO:
-            //main deme el nuevo objeto
-            createdObject.transform.parent = gridPosition.transform;
-        }
-        else
-        {
-            Destroy(createdObject);
+            Vector3 size = prefab.GetComponent<Renderer>().bounds.size;
+            position4Object.y = size.y / 2;
+
+            GameObject createdObject = Instantiate(prefab, position4Object, Quaternion.identity);
+            if (grid.SetGridObject(mousePosition, createdObject))
+            {
+                createdObject.transform.parent = gridPosition.transform;
+            }
+            else
+            {
+                Destroy(createdObject);
+            }
         }
     }
 
@@ -109,7 +112,10 @@ public class GridManager : MonoBehaviour
     public void AddObject(Vector3 position, GameObject objectToAdd)
     {
         Vector3 position4Object = grid.GetWorldPositionCloserToCell(position);
-        position4Object.y += 0.5f;
+
+        Vector3 size = objectToAdd.GetComponent<Renderer>().bounds.size;
+        position4Object.y = size.y / 2;
+
         grid.SetGridObject(position4Object, objectToAdd);
     }
 
@@ -129,7 +135,7 @@ public class GridManager : MonoBehaviour
         }
     }
 
-    public LineRenderManager createLineManager()
+    public LineRenderManager CreateLineManager()
     {
         GameObject line = Instantiate(LinePrefab);
 
