@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Deten elfuego/Assets/Original Wood Textures/Wood Texture 02/Wood Texture 02 normal.tga.meta
+guid: c505d78d2bf90cc4aa29047d335d269e
+timeCreated: 1473371626
+=======
 guid: 93d153e2162fee749ad974876e6f62c2
 timeCreated: 1479274980
+>>>>>>> 36229d8cded03c66e0dafdebb795a586e058071e:Deten elfuego/Assets/AssetStoreAssets/Machete01/Machete01_01 - Default_Normal.tga.meta
 licenseType: Store
 TextureImporter:
   fileIDToRecycleName: {}
