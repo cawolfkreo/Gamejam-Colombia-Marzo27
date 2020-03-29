@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GridManager : MonoBehaviour
 {
@@ -43,6 +44,7 @@ public class GridManager : MonoBehaviour
 
         GridLines = new GameObject("GridLines");
         GridLines.transform.parent = transform;
+        GridLines.tag = "GridLines";
 
         cellSize = size.x / (float)numXCells;
 
@@ -57,17 +59,29 @@ public class GridManager : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            if (isASuccesHit)
+            if (isASuccesHit && SceneManager.GetActiveScene().name != "MainScene")
             {
                 Vector3 position4Object = grid.GetWorldPositionCloserToCell(mousePosition);
                 position4Object.y += 0.5f;
                 AddObjectFromWorld(mousePosition, position4Object);
             }
         }
-        else if(Input.GetMouseButton(1))
+        else if(Input.GetMouseButton(1) && SceneManager.GetActiveScene().name != "MainScene")
         {
+
             RemoveObjectFromWorld(mousePosition);
 
+        }
+        foreach(Transform child in this.gameObject.transform)
+        {
+            if(child.tag == "GridLines" && SceneManager.GetActiveScene().name == "MainScene")
+            {
+                child.gameObject.SetActive(false);
+            }
+            else
+            {
+                child.gameObject.SetActive(true);
+            }
         }
     }
 
