@@ -18,7 +18,7 @@ public class SwitchScenes : MonoBehaviour
         {
             SceneManager.LoadScene("MainScene");
         }
-        else if(Input.GetKeyDown("e") && SceneManager.GetActiveScene().name != "PlayerScene")
+        else if(Input.GetKeyDown("r") && SceneManager.GetActiveScene().name != "PlayerScene")
         {
             SceneManager.LoadScene("PlayerScene");
         }

@@ -62,7 +62,7 @@
      <Compile Include="Assets\ChainFour.cs" />
      <Compile Include="Assets\ChainSecond.cs" />
      <Compile Include="Assets\ChainThird.cs" />
-     <Compile Include="Assets\DontDestroyStatus.cs" />
+     <Compile Include="Assets\DontDestroyPosManager.cs" />
      <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_AutoStopLoopedEffect.cs" />
      <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_New.cs" />
      <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_RandomDir.cs" />
@@ -77,6 +77,7 @@
      <Compile Include="Assets\Scripts\ArtifactProjectileScript.cs" />
      <Compile Include="Assets\Scripts\ArtifactScript.cs" />
      <Compile Include="Assets\Scripts\DontDestroy.cs" />
+     <Compile Include="Assets\Scripts\DontDestroyStatus.cs" />
      <Compile Include="Assets\Scripts\GameGridManager.cs" />
      <Compile Include="Assets\Scripts\Grid.cs" />
      <Compile Include="Assets\Scripts\GridManager.cs" />

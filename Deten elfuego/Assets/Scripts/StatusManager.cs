@@ -21,12 +21,12 @@ public class StatusManager : MonoBehaviour
     {
         canvasStart.SetActive(false);
         continueButtonStart.onClick.AddListener(LoadPlayerScene);
+        continueButtonEditor.onClick.AddListener(PassTutorial);
     }
 
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(gameStatus);
         if(sparkle != null)
         {
             if (sparkle.GetComponent<ParticleSystem>().enableEmission && gameStatus == 1)
@@ -40,16 +40,17 @@ public class StatusManager : MonoBehaviour
             if (gameStatus == 2)
             {
                 canvasStart.SetActive(false);
-                continueButtonEditor.onClick.AddListener(PassTutorial);
             }
             else if (gameStatus == 3)
             {
                 var spark = GameObject.Find("Sparks");
-                if (spark.GetComponent<ParticleSystem>().enableEmission)
+                if(spark != null)
                 {
-                    Debug.Log("A VER");
-                    StartText.text = "Ok, eso no ha salido bien... Volvamos a editar. Utiliza la tecla E para volver al editor.";
-                    canvasStart.SetActive(true);
+                    if (spark.GetComponent<ParticleSystem>().enableEmission)
+                    {
+                        StartText.text = "Ok, eso no ha salido bien... Volvamos a editar. Utiliza la tecla R para volver al editor.";
+                        canvasStart.SetActive(true);
+                    }
                 }
             }
         }
@@ -87,7 +88,7 @@ public class StatusManager : MonoBehaviour
         }else if(tutorialCount == 1)
         {
             tutorialText.text = "Utiliza los objetos que tienes a la mano para crear una cadena que contrarreste a la que viste anteriormente. Buena suerte!" +
-                "Puedes usar las teclas A y E para moverte entre la escena principal y el editor respectivamente";
+                " Puedes usar las teclas A y R para moverte entre la escena principal y el editor respectivamente";
             tutorialCount = 2;
         }
         else
