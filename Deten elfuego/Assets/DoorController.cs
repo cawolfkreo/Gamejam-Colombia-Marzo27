@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class DoorController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField]
+    private Animator animation;
 
-    // Update is called once per frame
-    void Update()
+    private void OnCollisionEnter(Collision collision)
     {
-        
+        if (collision.gameObject.name.Contains("Roller"))
+        {
+            animation = GetComponent<Animator>();
+            animation.Play("CarFall");
+        }
+
     }
 }
