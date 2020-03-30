@@ -774,6 +774,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: ArtifactTrigger
       objectReference: {fileID: 0}
+    - target: {fileID: 4435961290347294023, guid: 53deb1310a455994789e4ccc2abe3f2c,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53deb1310a455994789e4ccc2abe3f2c, type: 3}
 --- !u!1 &531004287 stripped
@@ -2588,6 +2593,25 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1109451427 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4435961290347294022, guid: 53deb1310a455994789e4ccc2abe3f2c,
+    type: 3}
+  m_PrefabInstance: {fileID: 494961202}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1109451428
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1109451427}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 9.999999, y: 2.220446e-16, z: 10}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1134369333
 GameObject:
