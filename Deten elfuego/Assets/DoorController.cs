@@ -4,18 +4,14 @@ using UnityEngine;
 
 public class DoorController : MonoBehaviour
 {
-    [SerializeField]
     private Animator animation;
 
     private void OnTriggerEnter(Collider collider)
     {
-        if (collider.gameObject.name.Contains("Roller"))
+        if (collider.gameObject.name.Contains("Roller1"))
         {
             animation = GetComponent<Animator>();
             animation.Play("doorchain");
-            Debug.Log("Entra COll DOOR");
         }
-
-
     }
 }

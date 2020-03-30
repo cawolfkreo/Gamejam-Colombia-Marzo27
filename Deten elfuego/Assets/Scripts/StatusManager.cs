@@ -94,7 +94,7 @@ public class StatusManager : MonoBehaviour
                 break;
             case 2:
                 tutorialText.text = "Utiliza los objetos que tienes a la mano para crear una cadena que contrarreste a la que viste anteriormente. Buena suerte!" +
-                " Puedes usar las teclas A y R para moverte entre la escena principal y el editor respectivamente";
+                " Puedes usar las teclas A y R para moverte entre la escena principal y el editor respectivamente. Preciona ESC cuando quieras salir del juego.";
                 tutorialCount = 3;
                 break;
             case 3:

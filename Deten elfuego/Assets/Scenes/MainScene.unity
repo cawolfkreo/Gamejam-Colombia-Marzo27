@@ -3249,7 +3249,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 056005971a44ee84296bce90f185411d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animation: {fileID: 0}
 --- !u!65 &745031825
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3582,7 +3581,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 1
-  m_Constraints: 118
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!114 &751420575
 MonoBehaviour:
@@ -4901,7 +4900,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 3642e4d34df4d174493de1074345821f, type: 3}
-    m_FontSize: 36
+    m_FontSize: 34
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 3
