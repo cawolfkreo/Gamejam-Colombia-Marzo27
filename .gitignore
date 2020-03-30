@@ -33,3 +33,11 @@ obj/
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# ============ #
+#    Builds    #
+# ============ #
+*/Builds
+/Builds
+/Builds/*
+Builds/*
