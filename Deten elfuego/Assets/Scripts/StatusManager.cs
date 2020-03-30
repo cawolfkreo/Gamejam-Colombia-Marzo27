@@ -26,7 +26,6 @@ public class StatusManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(gameStatus);
         if (sparkle.GetComponent<ParticleSystem>().enableEmission && gameStatus == 1)
         {
            // StartText.text = "Ok, eso es malo, ¿Crees poder evitarlo?";
