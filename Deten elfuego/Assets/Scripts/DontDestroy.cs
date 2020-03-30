@@ -13,14 +13,55 @@ public class DontDestroy : MonoBehaviour
         {
             instance = this.gameObject.GetInstanceID();
             DontDestroyOnLoad(this.gameObject);
+            SceneManager.sceneLoaded += OnSceneLoaded;
             return;
         }
         Destroy(this.gameObject);
     }
 
-    // Update is called once per frame
-    void Update()
+    // called when the game is terminated
+    private void OnDisable()
     {
-        
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (scene.name.Equals("PlayerScene"))
+        {
+            ResetGridOnSceneChange();
+        }                
+    }
+
+    private void ResetGridOnSceneChange()
+    {
+        Transform gridPosition = getGridPosition();
+
+        //Makes sure the gridposition was found. Otherwise it won't execute anythjing with it.
+        if (gridPosition)
+        {
+            ResetArtifacts(gridPosition);
+        }
+    }
+
+    private Transform getGridPosition()
+    {
+        foreach (Transform child in transform)
+        {
+            if (child.name.Equals("gridPosition"))
+            {
+                return child;
+            }
+        }
+
+        return null;
+    }
+
+    private void ResetArtifacts(Transform gridPosition)
+    {
+        foreach (Transform Artifact in gridPosition)
+        {
+            //Artifact.GetComponent<GridManager>();
+        }
     }
 }
