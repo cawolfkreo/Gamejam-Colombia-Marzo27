@@ -187,7 +187,7 @@ public class UIcontroller : MonoBehaviour
 
             BoxCollider bc = screen.AddComponent<BoxCollider>();
             bc.size = new Vector3(55, 70, 15);
-            bc.center = new Vector3(7, 0, -10);
+            bc.center = new Vector3(12, 15, -10);
 
             objectToSet.tag = "UIMachine";
             
