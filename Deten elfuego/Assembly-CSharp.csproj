@@ -65,6 +65,7 @@
   <ItemGroup>
     <Compile Include="Assets\AddConstantVelocity.cs" />
     <Compile Include="Assets\Artifacts\ScriptsArtifacts\BulletCollision.cs" />
+    <Compile Include="Assets\BallCollitionHandler.cs" />
     <Compile Include="Assets\CarController.cs" />
     <Compile Include="Assets\ChainBooks.cs" />
     <Compile Include="Assets\ChainFinal.cs" />
@@ -87,6 +88,7 @@
     <Compile Include="Assets\JumpController.cs" />
     <Compile Include="Assets\QuickOutline\Scripts\Outline.cs" />
     <Compile Include="Assets\Scripts\ArtifactProjectileScript.cs" />
+    <Compile Include="Assets\Scripts\ArtifactScissors1SoundController.cs" />
     <Compile Include="Assets\Scripts\ArtifactScript.cs" />
     <Compile Include="Assets\Scripts\DontDestroy.cs" />
     <Compile Include="Assets\Scripts\DontDestroyStatus.cs" />
