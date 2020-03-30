@@ -27,7 +27,6 @@ public class animsControl : MonoBehaviour
                     {
                         var anim = gameSelected.GetComponent<Animator>();
                         anim.Play("ArtifactTriggerAnim");
-                        Debug.Log("test: " + gameSelected.name);
                     }
                 }
             }

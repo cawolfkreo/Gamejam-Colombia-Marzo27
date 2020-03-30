@@ -749,6 +749,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: Room
       objectReference: {fileID: 0}
+    - target: {fileID: 4435961288549478837, guid: 53deb1310a455994789e4ccc2abe3f2c,
+        type: 3}
+      propertyPath: m_TagString
+      value: ArtifactTrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 4435961289515725682, guid: 53deb1310a455994789e4ccc2abe3f2c,
+        type: 3}
+      propertyPath: m_TagString
+      value: ArtifactTrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 4435961289761932570, guid: 53deb1310a455994789e4ccc2abe3f2c,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4435961289761932645, guid: 53deb1310a455994789e4ccc2abe3f2c,
+        type: 3}
+      propertyPath: m_TagString
+      value: ArtifactTrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 4435961290347294022, guid: 53deb1310a455994789e4ccc2abe3f2c,
+        type: 3}
+      propertyPath: m_TagString
+      value: ArtifactTrigger
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53deb1310a455994789e4ccc2abe3f2c, type: 3}
 --- !u!1 &508098458
@@ -1178,12 +1203,12 @@ PrefabInstance:
     - target: {fileID: 8429049622563920028, guid: 971b1cfa843a9624ca13db0aee2eadc0,
         type: 3}
       propertyPath: deltaAngle
-      value: 15
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8429049622563920028, guid: 971b1cfa843a9624ca13db0aee2eadc0,
         type: 3}
       propertyPath: speed
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8429049622563920028, guid: 971b1cfa843a9624ca13db0aee2eadc0,
         type: 3}
