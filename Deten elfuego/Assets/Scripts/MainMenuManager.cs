@@ -14,9 +14,4 @@ public class MainMenuManager : MonoBehaviour
     {
         SceneManager.LoadScene("MainScene");
     }
-
-    public void Tutorial()
-    {
-        //TODO: Hacer el tutorial y desplegarlo.
-    }
 }

@@ -27,11 +27,6 @@ public class DontDestroy : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        Debug.Log("===========================");
-        Debug.Log("Se ha cargado la escena:");
-        Debug.Log(scene.name);
-        Debug.Log("===========================");
-
         if (scene.name.Equals("PlayerScene"))
         {
             ResetGridOnSceneChange();
