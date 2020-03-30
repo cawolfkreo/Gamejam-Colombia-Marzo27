@@ -1,0 +1,29 @@
+Martillo: https://assetstore.unity.com/packages/3d/props/tools/hammer-20496
+Cannon: https://assetstore.unity.com/packages/3d/props/weapons/victorian-pbr-cannon-50820
+Caneca: https://assetstore.unity.com/packages/3d/props/furniture/trash-bin-96670
+Lamparas: https://assetstore.unity.com/packages/3d/props/indoor-lamps-140220
+texturas madera: https://assetstore.unity.com/packages/2d/textures-materials/wood/15-original-wood-texture-71286
+Puerta: https://assetstore.unity.com/packages/3d/props/interior/door-free-pack-aferar-148411
+tv: https://assetstore.unity.com/packages/3d/props/electronics/flatscreen-tv-9721
+muebles: https://assetstore.unity.com/packages/3d/props/furniture/toon-furniture-88740
+libros: https://assetstore.unity.com/packages/3d/props/interior/books-pack-5484
+tijeras: https://assetstore.unity.com/packages/3d/props/office-supplies-low-poly-105519
+cuchillo: https://assetstore.unity.com/packages/3d/props/weapons/knife-free-143769
+outline: https://assetstore.unity.com/packages/tools/particles-effects/quick-outline-115488
+carro: https://assetstore.unity.com/packages/3d/vehicles/low-poly-car-149312
+leonard model: https://www.mixamo.com
+cargador: https://free3d.com/3d-model/mp3-wall-charger-v2--606035.html
+celular: https://assetstore.unity.com/packages/3d/props/electronics/free-smartphone-90324
+bola de bolos: https://assetstore.unity.com/packages/3d/props/bowling-kegel-ball-67371
+encendedor: https://assetstore.unity.com/packages/3d/props/cigarette-lighter-pbr-106937
+trampa ratones: https://sketchfab.com/3d-models/mousetrap-11d8cc060bf041f0b1324592ef6879c5
+machete: https://assetstore.unity.com/packages/3d/props/weapons/machete01-76191
+Fuente Doraemon: https://www.dafont.com/es/doraemon-2.font 
+Fuente Russo: https://fonts.google.com & Jovanny Lemonad (jovanny.ru)
+
+Musica: www.bensound.com
+pinpong: https://free3d.com/3d-model/ping-pong-paddles-64099.html 
+billar: https://assetstore.unity.com/packages/3d/props/free-barcade-asset-pack-123704
+lamparas 2 https://free3d.com/3d-model/sconce-light-95541.html
+patines: https://free3d.com/3d-model/roller-skates-v2--181953.html
+
