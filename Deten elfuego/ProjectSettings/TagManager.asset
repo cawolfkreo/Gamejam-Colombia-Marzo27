@@ -18,6 +18,9 @@ TagManager:
   - door
   - cube
   - cubefall
+  - ArtifactTrigger
+  - MapObject
+  - car
   layers:
   - Default
   - TransparentFX
