@@ -13,7 +13,6 @@ public class LampFalling : MonoBehaviour
         {
             animation = GetComponent<Animator>();
             animation.Play("lamp falling");
-            Debug.Log("entra al collision");
         }
     }
 

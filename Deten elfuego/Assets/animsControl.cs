@@ -19,7 +19,9 @@ public class animsControl : MonoBehaviour
         {
             if(hit.transform)
             {
-                hit.tranform;
+                var test = hit.transform;
+
+                Debug.Log("test: " + test.transform.gameObject.name);
             }
         }
     }

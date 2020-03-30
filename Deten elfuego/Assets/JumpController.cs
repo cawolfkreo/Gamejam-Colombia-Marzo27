@@ -13,7 +13,6 @@ public class JumpController : MonoBehaviour
         {
             animation = GetComponent<Animator>();
             animation.Play("CarJump");
-            Debug.Log("entra al collision car");
         }
 
     }

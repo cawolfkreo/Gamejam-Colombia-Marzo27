@@ -14,9 +14,5 @@ public class ChainFour : MonoBehaviour
             animation = GetComponent<Animator>();
             animation.Play("bookfall3");
         }
-        else
-        {
-            Debug.Log("no hay collision");
-        }
     }
 }

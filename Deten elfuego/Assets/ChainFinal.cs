@@ -14,9 +14,5 @@ public class ChainFinal : MonoBehaviour
             animation = GetComponent<Animator>();
             animation.Play("bookfinaldestination");
         }
-        else
-        {
-            Debug.Log("no hay collision");
-        }
     }
 }

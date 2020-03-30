@@ -14,9 +14,5 @@ public class ChainThird : MonoBehaviour
             animation = GetComponent<Animator>();
             animation.Play("book fall2");
         }
-        else
-        {
-            Debug.Log("no hay collision");
-        }
     }
 }
