@@ -80,21 +80,30 @@ public class StatusManager : MonoBehaviour
     }
     void PassTutorial()
     {
-        if(tutorialCount == 0)
+        switch (tutorialCount)
         {
-            tutorialText.text = "A la derecha encontrarás un menú para seleccionar objetos que te ayudarán entre 3 categorías (Rodadores, detonadores y cortadores)," +
+            case 0:
+                tutorialText.text = "A la derecha encontrarás un menú para seleccionar objetos que te ayudarán entre 3 categorías (Rodadores, detonadores y cortadores)," +
                 "debes usar al menos un objeto de cada categoría y ten en cuenta que los objetos cortadores deben ser accionados por ti.";
-            tutorialCount = 1;
-        }else if(tutorialCount == 1)
-        {
-            tutorialText.text = "Utiliza los objetos que tienes a la mano para crear una cadena que contrarreste a la que viste anteriormente. Buena suerte!" +
+                tutorialCount = 1;
+                break;
+            case 1:
+                tutorialText.text = "Con el click izquierdo del ratón puedes seleccionar uno de los objetos del menú y accionar los objetos cortantes. Mientras que con el" +
+                " click derecho del ratón puedes eliminar los objetos que has agregado y quieres remover.";
+                tutorialCount = 2;
+                break;
+            case 2:
+                tutorialText.text = "Utiliza los objetos que tienes a la mano para crear una cadena que contrarreste a la que viste anteriormente. Buena suerte!" +
                 " Puedes usar las teclas A y R para moverte entre la escena principal y el editor respectivamente";
-            tutorialCount = 2;
-        }
-        else
-        {
-            canvasTuto.SetActive(false);
-            gameStatus = 3;
+                tutorialCount = 3;
+                break;
+            case 3:
+                canvasTuto.SetActive(false);
+                gameStatus = 3;
+                break;
+            default:
+                Debug.Log("Honk!");
+                break;
         }
     }
 }
