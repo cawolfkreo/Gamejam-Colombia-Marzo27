@@ -7,13 +7,15 @@ public class DoorController : MonoBehaviour
     [SerializeField]
     private Animator animation;
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider collider)
     {
-        if (collision.gameObject.name.Contains("Roller"))
+        if (collider.gameObject.name.Contains("Roller"))
         {
             animation = GetComponent<Animator>();
-            animation.Play("CarFall");
+            animation.Play("doorchain");
+            Debug.Log("Entra COll DOOR");
         }
+
 
     }
 }
