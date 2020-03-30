@@ -253,10 +253,10 @@ RectTransform:
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -325.75}
-  m_SizeDelta: {x: 496.52002, y: -770.1}
-  m_Pivot: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 0, y: 64}
+  m_SizeDelta: {x: 496.5, y: 220.5}
+  m_Pivot: {x: 1, y: 0}
 --- !u!222 &4704318614220954196
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -278,7 +278,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.38039216, g: 0.69411767, b: 0.9529412, a: 0.392}
+  m_Color: {r: 0.38039216, g: 0.69411767, b: 0.9529412, a: 0.6745098}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -462,7 +462,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Escoge el tipo de m\xE1quina que quieres agregar"
+  m_text: Escoge el tipo de maquina que quieres agregar
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4f42df3d4d3d3954785655f58ae0c8d1, type: 2}
   m_sharedMaterial: {fileID: -2095802888218387373, guid: 4f42df3d4d3d3954785655f58ae0c8d1,
@@ -539,7 +539,7 @@ MonoBehaviour:
     linkCount: 0
     lineCount: 2
     pageCount: 1
-    materialCount: 2
+    materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
@@ -1594,7 +1594,7 @@ Canvas:
   m_GameObject: {fileID: 7851334595201761228}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 0}
   m_PlaneDistance: 250
   m_PixelPerfect: 0
@@ -1838,7 +1838,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Selecciona el tipo de m\xE1quina que quieres agregar"
+  m_text: Selecciona el tipo de maquina que quieres agregar
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4f42df3d4d3d3954785655f58ae0c8d1, type: 2}
   m_sharedMaterial: {fileID: -2095802888218387373, guid: 4f42df3d4d3d3954785655f58ae0c8d1,
@@ -1915,7 +1915,7 @@ MonoBehaviour:
     linkCount: 0
     lineCount: 2
     pageCount: 1
-    materialCount: 2
+    materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
@@ -2128,7 +2128,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 7.3900146, y: 0.02}
+  m_AnchoredPosition: {x: 7.3900146, y: 0.020019531}
   m_SizeDelta: {x: 479.15, y: 99.95}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &895943825845069251

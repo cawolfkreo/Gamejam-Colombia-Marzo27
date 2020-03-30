@@ -878,121 +878,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1658569762666891283, guid: 971b1cfa843a9624ca13db0aee2eadc0,
-        type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1658569762666891283, guid: 971b1cfa843a9624ca13db0aee2eadc0,
-        type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4005971486160220452, guid: 971b1cfa843a9624ca13db0aee2eadc0,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0.020019531
-      objectReference: {fileID: 0}
-    - target: {fileID: 4385972499391615945, guid: 971b1cfa843a9624ca13db0aee2eadc0,
-        type: 3}
-      propertyPath: m_text
-      value: Escoge el tipo de maquina que quieres agregar
-      objectReference: {fileID: 0}
-    - target: {fileID: 4385972499391615945, guid: 971b1cfa843a9624ca13db0aee2eadc0,
-        type: 3}
-      propertyPath: m_firstOverflowCharacterIndex
-      value: 37
-      objectReference: {fileID: 0}
-    - target: {fileID: 4385972499391615945, guid: 971b1cfa843a9624ca13db0aee2eadc0,
-        type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 44
-      objectReference: {fileID: 0}
-    - target: {fileID: 4385972499391615945, guid: 971b1cfa843a9624ca13db0aee2eadc0,
-        type: 3}
-      propertyPath: m_textInfo.materialCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6761595379256872141, guid: 971b1cfa843a9624ca13db0aee2eadc0,
-        type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 6761595379256872141, guid: 971b1cfa843a9624ca13db0aee2eadc0,
-        type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7529024529954199294, guid: 971b1cfa843a9624ca13db0aee2eadc0,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 64
-      objectReference: {fileID: 0}
-    - target: {fileID: 7529024529954199294, guid: 971b1cfa843a9624ca13db0aee2eadc0,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 496.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7529024529954199294, guid: 971b1cfa843a9624ca13db0aee2eadc0,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 220.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7529024529954199294, guid: 971b1cfa843a9624ca13db0aee2eadc0,
-        type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7529024529954199294, guid: 971b1cfa843a9624ca13db0aee2eadc0,
-        type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7529024529954199294, guid: 971b1cfa843a9624ca13db0aee2eadc0,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7529024529954199294, guid: 971b1cfa843a9624ca13db0aee2eadc0,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7529024529954199294, guid: 971b1cfa843a9624ca13db0aee2eadc0,
-        type: 3}
-      propertyPath: m_Pivot.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7851334595201761232, guid: 971b1cfa843a9624ca13db0aee2eadc0,
         type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 963194227}
-    - target: {fileID: 7851334595201761232, guid: 971b1cfa843a9624ca13db0aee2eadc0,
-        type: 3}
-      propertyPath: m_RenderMode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7851334595201761235, guid: 971b1cfa843a9624ca13db0aee2eadc0,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7851334595285245116, guid: 971b1cfa843a9624ca13db0aee2eadc0,
-        type: 3}
-      propertyPath: m_text
-      value: Selecciona el tipo de maquina que quieres agregar
-      objectReference: {fileID: 0}
-    - target: {fileID: 7851334595285245116, guid: 971b1cfa843a9624ca13db0aee2eadc0,
-        type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 48
-      objectReference: {fileID: 0}
-    - target: {fileID: 7851334595285245116, guid: 971b1cfa843a9624ca13db0aee2eadc0,
-        type: 3}
-      propertyPath: m_textInfo.materialCount
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7851334595410600409, guid: 971b1cfa843a9624ca13db0aee2eadc0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1052,11 +942,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: UIObjectMenu
-      objectReference: {fileID: 0}
-    - target: {fileID: 7866990631906326961, guid: 971b1cfa843a9624ca13db0aee2eadc0,
-        type: 3}
-      propertyPath: m_Color.a
-      value: 0.6745098
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 971b1cfa843a9624ca13db0aee2eadc0, type: 3}
@@ -1716,7 +1601,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!4 &751420575 stripped
 Transform:
