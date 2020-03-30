@@ -72,7 +72,7 @@ public class UIcontroller : MonoBehaviour
 
     private void Update()
     {
-        Vector3 rotation = new Vector3(0f, 0f, 0f);
+        Vector3 rotation = new Vector3(0f, deltaAngle, 0f);
         foreach (GameObject machine in createdObjects)
         {
             machine.transform.Rotate(rotation * Time.deltaTime * speed);
@@ -153,7 +153,6 @@ public class UIcontroller : MonoBehaviour
 
     private void DisplayObjects(List<GameObject> objectsToDisplay, short selected)
     {
-        Debug.Log(objectsToDisplay.Count);
         selectedList = selected;
         gameObject.SetActive(true);
         selectedMachine = default;
@@ -178,6 +177,17 @@ public class UIcontroller : MonoBehaviour
             objectToSet.transform.rotation = machinesPositions[i].rotation;
 
             objectToSet.transform.localScale *= 20;
+
+            GameObject screen = new GameObject();
+            screen.transform.SetParent(objectToSet.transform);
+            screen.name = objectToSet.name + "(-collider)";
+            
+            screen.transform.rotation = objectToSet.transform.rotation;
+            screen.transform.position = machinesPositions[i].position + new Vector3(0, 0, -20);
+
+            BoxCollider bc = screen.AddComponent<BoxCollider>();
+            bc.size = new Vector3(55, 70, 15);
+            bc.center = new Vector3(7, 0, -10);
 
             objectToSet.tag = "UIMachine";
             

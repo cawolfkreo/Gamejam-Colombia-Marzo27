@@ -12,6 +12,7 @@ obj/
 *.svd
 *.userprefs
 /*.csproj
+*.csproj
 *.pidb
 *.suo
 /*.sln
@@ -20,6 +21,7 @@ obj/
 *.booproj
 .vs/
 .vs/*
+*.sln
 
 # ============ #
 # OS generated #
