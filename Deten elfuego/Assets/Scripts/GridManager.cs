@@ -83,36 +83,39 @@ public class GridManager : MonoBehaviour
     
     private void AddObjectFromWorld(Vector3 mousePosition, Vector3 position4Object)
     {
-        GameObject prefab = UIController.GetMachinePrefab();
-        if (prefab)
+        if (UIController)
         {
-            Vector3 deltaY = new Vector3();
-            Vector3 size = prefab.GetComponent<Renderer>().bounds.size;
-            basicHeight bH = prefab.GetComponent<basicHeight>();
-            foreach(Transform p in prefab.transform)
+            GameObject prefab = UIController.GetMachinePrefab();
+            if (prefab && UIController)
             {
-                if (bH)
+                Vector3 deltaY = new Vector3();
+                Vector3 size = prefab.GetComponent<Renderer>().bounds.size;
+                basicHeight bH = prefab.GetComponent<basicHeight>();
+                foreach (Transform p in prefab.transform)
                 {
-                    float height = bH.getHeight();
-                    Vector3 pos = p.position;
-                    pos.y += height;
-                    deltaY = pos;
+                    if (bH)
+                    {
+                        float height = bH.getHeight();
+                        Vector3 pos = p.position;
+                        pos.y += height;
+                        deltaY = pos;
+                    }
+                }
+                //position4Object.y += size.y / 2;
+                position4Object.y = gridPosition.position.y;
+                position4Object.y += deltaY.y;
+
+                GameObject createdObject = Instantiate(prefab, position4Object, prefab.transform.rotation);
+                if (grid.SetGridObject(mousePosition, createdObject))
+                {
+                    createdObject.transform.parent = gridPosition.transform;
+                }
+                else
+                {
+                    Destroy(createdObject);
                 }
             }
-            //position4Object.y += size.y / 2;
-            position4Object.y = gridPosition.position.y;
-            position4Object.y += deltaY.y;
-
-            GameObject createdObject = Instantiate(prefab, position4Object, prefab.transform.rotation);
-            if (grid.SetGridObject(mousePosition, createdObject))
-            {
-                createdObject.transform.parent = gridPosition.transform;
-            }
-            else
-            {
-                Destroy(createdObject);
-            }
-        }
+        }        
     }
 
     private void RemoveObjectFromWorld(Vector3 mousePosition)

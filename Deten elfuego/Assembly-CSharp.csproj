@@ -105,6 +105,7 @@
     <Compile Include="Assets\Scripts\UIcontroller.cs" />
     <Compile Include="Assets\Scripts\animsControl.cs" />
     <Compile Include="Assets\SparkController.cs" />
+    <Compile Include="Assets\WinCondition.cs" />
     <Compile Include="Assets\basicHeight.cs" />
     <None Include="Assets\3D objects\Smartphone\StandardColorMask.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />

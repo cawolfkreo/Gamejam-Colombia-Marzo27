@@ -6,6 +6,7 @@ public class DontDestroyPosManager : MonoBehaviour
 {
     // Start is called before the first frame update
     private static int instance = 0;
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -21,5 +22,12 @@ public class DontDestroyPosManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        GameObject MainMenu = GameObject.Find("SceneManager");
+
+        if (MainMenu)
+        {
+            MainMenu.GetComponent<MainMenuManager>().addGameObject(gameObject);
+            gameObject.SetActive(false);
+        }
     }
 }

@@ -19,6 +19,17 @@ public class DontDestroy : MonoBehaviour
         Destroy(this.gameObject);
     }
 
+    void Update()
+    {
+        GameObject MainMenu = GameObject.Find("SceneManager");
+
+        if (MainMenu)
+        {
+            MainMenu.GetComponent<MainMenuManager>().addGameObject(gameObject);
+            gameObject.SetActive(false);
+        }
+    }
+
     // called when the game is terminated
     private void OnDisable()
     {

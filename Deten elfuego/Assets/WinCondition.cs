@@ -32,8 +32,6 @@ public class WinCondition : MonoBehaviour
             vectorPosition = transform.position;
             isFrozen = true;
             canvas.SetActive(true);
-            Debug.Log("ganste");
-            Debug.Log(gameObject.name);
         }
 
     }
