@@ -27,24 +27,53 @@ public class StatusManager : MonoBehaviour
     void Update()
     {
         Debug.Log(gameStatus);
-        if (sparkle.GetComponent<ParticleSystem>().enableEmission && gameStatus == 1)
+        if(sparkle != null)
         {
-           // StartText.text = "Ok, eso es malo, ¿Crees poder evitarlo?";
-            canvasStart.SetActive(true);
-        } else if (gameStatus == 2)
+            if (sparkle.GetComponent<ParticleSystem>().enableEmission && gameStatus == 1)
+            {
+                StartText.text = "Ok, eso es malo, ¿Crees poder evitarlo?";
+                canvasStart.SetActive(true);
+            }
+        }
+        else
+        {
+            if (gameStatus == 2)
+            {
+                canvasStart.SetActive(false);
+                continueButtonEditor.onClick.AddListener(PassTutorial);
+            }
+            else if (gameStatus == 3)
+            {
+                var spark = GameObject.Find("Sparks");
+                if (spark.GetComponent<ParticleSystem>().enableEmission)
+                {
+                    Debug.Log("A VER");
+                    StartText.text = "Ok, eso no ha salido bien... Volvamos a editar. Utiliza la tecla E para volver al editor.";
+                    canvasStart.SetActive(true);
+                }
+            }
+        }
+         
+
+        if (SceneManager.GetActiveScene().name != "MainScene")
         {
             canvasStart.SetActive(false);
-            continueButtonEditor.onClick.AddListener(PassTutorial);
         }
     }
 
     void LoadPlayerScene()
     {
-        gameStatus = 2;
-        canvasStart.SetActive(false);
+        if(gameStatus != 3)
+        {
+            gameStatus = 2;
+            canvasStart.SetActive(false);
 
-        SceneManager.LoadScene("PlayerScene");
-        canvasTuto.SetActive(true);
+            SceneManager.LoadScene("PlayerScene");
+            canvasTuto.SetActive(true);
+        }else
+        {
+            canvasStart.SetActive(false);
+        }
 
 
     }
@@ -57,12 +86,14 @@ public class StatusManager : MonoBehaviour
             tutorialCount = 1;
         }else if(tutorialCount == 1)
         {
-            tutorialText.text = "Utiliza los objetos que tienes a la mano para crear una cadena que contrarreste a la que viste anteriormente. Buena suerte!";
+            tutorialText.text = "Utiliza los objetos que tienes a la mano para crear una cadena que contrarreste a la que viste anteriormente. Buena suerte!" +
+                "Puedes usar las teclas A y E para moverte entre la escena principal y el editor respectivamente";
             tutorialCount = 2;
         }
         else
         {
             canvasTuto.SetActive(false);
+            gameStatus = 3;
         }
     }
 }

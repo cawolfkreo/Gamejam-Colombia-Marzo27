@@ -14,11 +14,11 @@ public class SwitchScenes : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown("a"))
+        if(Input.GetKeyDown("a") && SceneManager.GetActiveScene().name != "MainScene")
         {
             SceneManager.LoadScene("MainScene");
         }
-        else if(Input.GetKeyDown("d"))
+        else if(Input.GetKeyDown("e") && SceneManager.GetActiveScene().name != "PlayerScene")
         {
             SceneManager.LoadScene("PlayerScene");
         }
