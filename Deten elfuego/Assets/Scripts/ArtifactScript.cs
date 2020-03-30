@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -27,6 +27,7 @@ public class ArtifactScript : MonoBehaviour
         if (other.gameObject.tag.Equals(triggeredBy))
         {
             animator.SetBool("triggered", true);
+            animator.SetBool("reset", false);
         }
     }
 }

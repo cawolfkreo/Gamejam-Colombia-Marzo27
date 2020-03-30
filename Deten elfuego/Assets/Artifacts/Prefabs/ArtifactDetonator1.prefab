@@ -666,6 +666,7 @@ GameObject:
   - component: {fileID: 7087225473656196507}
   - component: {fileID: 7420089973561996011}
   - component: {fileID: 6899336551514957388}
+  - component: {fileID: 7288461152435936403}
   m_Layer: 0
   m_Name: ArtifactDetonator1
   m_TagString: ArtifactTrigger
@@ -903,6 +904,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSourceArtifact: {fileID: 7420089973561996011}
+--- !u!114 &7288461152435936403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6808865408830389755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29056f7179492454dba91e84e1f1bb2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 105407757884095862}
 --- !u!1 &7167111019504988628
 GameObject:
   m_ObjectHideFlags: 0

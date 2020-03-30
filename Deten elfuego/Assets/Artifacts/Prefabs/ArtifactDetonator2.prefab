@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 1884677116395252904}
   - component: {fileID: 47677584604603328}
   - component: {fileID: 398290493561038138}
+  - component: {fileID: 6795931931503577313}
   m_Layer: 0
   m_Name: ArtifactDetonator2
   m_TagString: ArtifactTrigger
@@ -247,6 +248,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &6795931931503577313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175393656634949807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29056f7179492454dba91e84e1f1bb2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 6264699728677525393}
 --- !u!65 &5425460625346246670
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -556,6 +556,7 @@ GameObject:
   - component: {fileID: 6742626897468349105}
   - component: {fileID: 5231858562154795810}
   - component: {fileID: 7851577619660942075}
+  - component: {fileID: 7834185329494706303}
   m_Layer: 0
   m_Name: ArtifactDetonator3
   m_TagString: ArtifactTrigger
@@ -795,6 +796,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &7834185329494706303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2999568065507944591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29056f7179492454dba91e84e1f1bb2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 6365104238426121237}
 --- !u!1 &3739233316752293880
 GameObject:
   m_ObjectHideFlags: 0
@@ -1406,8 +1420,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.38354096, y: 0.3482281, z: 0.07092467}
-  m_Center: {x: -0.008381173, y: -0.020147592, z: -0.0040038973}
+  m_Size: {x: 0.38354096, y: 0.3482281, z: 0.03000035}
+  m_Center: {x: -0.008381168, y: -0.020147588, z: -0.07887331}
 --- !u!1001 &3917591797244948717
 PrefabInstance:
   m_ObjectHideFlags: 0

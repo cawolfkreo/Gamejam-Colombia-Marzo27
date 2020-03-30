@@ -200,6 +200,7 @@ GameObject:
   - component: {fileID: 5293110139609014035}
   - component: {fileID: 2437576784716484175}
   - component: {fileID: 4875707039594599582}
+  - component: {fileID: 3492361242917536127}
   m_Layer: 0
   m_Name: ArtifactCutter3
   m_TagString: ArtifactTrigger
@@ -434,6 +435,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSourceArtifact: {fileID: 2437576784716484175}
+--- !u!114 &3492361242917536127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2732806270304726302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29056f7179492454dba91e84e1f1bb2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 2858313631741179561}
 --- !u!1 &2732806270364718711
 GameObject:
   m_ObjectHideFlags: 0

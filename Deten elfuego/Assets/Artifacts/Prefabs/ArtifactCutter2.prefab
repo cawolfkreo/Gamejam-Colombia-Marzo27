@@ -521,6 +521,7 @@ GameObject:
   - component: {fileID: 2177413590609863986}
   - component: {fileID: 5568679525062619164}
   - component: {fileID: 7679260238514719850}
+  - component: {fileID: 5040006546406995565}
   m_Layer: 0
   m_Name: ArtifactCutter2
   m_TagString: ArtifactTrigger
@@ -759,6 +760,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSourceArtifact: {fileID: 5568679525062619164}
+--- !u!114 &5040006546406995565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7262026672389703134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29056f7179492454dba91e84e1f1bb2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 2304258841109206956}
 --- !u!65 &1390172603556995569
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -912,15 +926,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d72c17103b886f4ebd560637450ecc3, type: 3}
---- !u!1 &7262026672621281919 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 115572, guid: 0d72c17103b886f4ebd560637450ecc3,
-    type: 3}
-  m_PrefabInstance: {fileID: 7262026672621297931}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7262026672621643551 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 476692, guid: 0d72c17103b886f4ebd560637450ecc3,
+    type: 3}
+  m_PrefabInstance: {fileID: 7262026672621297931}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7262026672621281919 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 115572, guid: 0d72c17103b886f4ebd560637450ecc3,
     type: 3}
   m_PrefabInstance: {fileID: 7262026672621297931}
   m_PrefabAsset: {fileID: 0}

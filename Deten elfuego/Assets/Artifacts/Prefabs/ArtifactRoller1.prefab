@@ -135,7 +135,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: f626ee259bad7134b83688eeccc5a61d, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -275,6 +275,7 @@ GameObject:
   - component: {fileID: 6260939657967398887}
   - component: {fileID: 4508297541394252115}
   - component: {fileID: 5824046738722323300}
+  - component: {fileID: 1276904914027954144}
   m_Layer: 0
   m_Name: ArtifactRoller1
   m_TagString: Untagged
@@ -349,6 +350,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   heightToSum: 0.31
+--- !u!114 &1276904914027954144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6260939657967398886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29056f7179492454dba91e84e1f1bb2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 6828370372320343923}
 --- !u!1001 &1911268171089087853
 PrefabInstance:
   m_ObjectHideFlags: 0
