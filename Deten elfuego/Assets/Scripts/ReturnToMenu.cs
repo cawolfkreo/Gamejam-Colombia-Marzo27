@@ -15,4 +15,9 @@ public class ReturnToMenu : MonoBehaviour
             SceneManager.LoadScene(mainScene);
         }        
     }
+
+    public void BackToMain()
+    {
+        SceneManager.LoadScene(mainScene);
+    }
 }

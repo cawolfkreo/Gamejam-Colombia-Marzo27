@@ -121,6 +121,18 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &40919615 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 330895544838104977, guid: 8a6defc9b86f94c4ba054d5c5d7854e4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1509871679}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ea5541f89decc04ab1ffde9004eef8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &88038402
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5641,7 +5653,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1471883764}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 40919615}
+        m_MethodName: BackToMain
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1471883764
 MonoBehaviour:
   m_ObjectHideFlags: 0
