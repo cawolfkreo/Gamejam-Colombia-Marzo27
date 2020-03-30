@@ -22,6 +22,8 @@ obj/
 .vs/
 .vs/*
 *.sln
+*.csproj
+Deten elfuego/Assembly-CSharp.csproj
 
 # ============ #
 # OS generated #
@@ -41,4 +43,4 @@ Thumbs.db
 /Builds
 /Builds/*
 Builds/*
-*.csproj
+
