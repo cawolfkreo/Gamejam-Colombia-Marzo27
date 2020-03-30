@@ -17,17 +17,16 @@ public class animsControl : MonoBehaviour
         if(Input.GetMouseButtonDown(0))
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            if (Physics.Raycast(ray, out hit))
+            if (Physics.Raycast(ray, out hit) && hit.transform)
             {
-                if (hit.transform)
+                Transform test = hit.transform;
+                GameObject gameSelected = test.transform.gameObject;
+                if (gameSelected.name.Contains("Cutter"))
                 {
-                    var test = hit.transform;
-                    var gameSelected = test.transform.gameObject;
-                    if(gameSelected.name.Contains("Cutter"))
-                    {
-                        var anim = gameSelected.GetComponent<Animator>();
-                        anim.Play("ArtifactTriggerAnim");
-                    }
+                    Animator anim = gameSelected.GetComponent<Animator>();
+                    //anim.Play("ArtifactTriggerAnim");
+                    anim.SetBool("triggered", true);
+                    anim.SetBool("reset", false);
                 }
             }
         }

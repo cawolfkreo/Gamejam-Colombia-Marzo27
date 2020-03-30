@@ -61,7 +61,11 @@ public class DontDestroy : MonoBehaviour
     {
         foreach (Transform Artifact in gridPosition)
         {
-            //Artifact.GetComponent<GridManager>();
+            ArtifactResetter resetter = Artifact.GetComponent<ArtifactResetter>();
+            if (resetter)
+            {
+                resetter.ResetArtifact();
+            }
         }
     }
 }
