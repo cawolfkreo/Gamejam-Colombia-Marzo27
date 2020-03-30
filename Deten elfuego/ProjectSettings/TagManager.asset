@@ -15,6 +15,9 @@ TagManager:
   - lamp
   - charger
   - hips
+  - door
+  - cube
+  - cubefall
   layers:
   - Default
   - TransparentFX

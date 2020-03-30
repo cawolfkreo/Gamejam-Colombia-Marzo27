@@ -646,12 +646,15 @@
   <ItemGroup>
     <Compile Include="Assets\AddConstantVelocity.cs" />
     <Compile Include="Assets\Artifacts\ScriptsArtifacts\BulletCollision.cs" />
+    <Compile Include="Assets\CarController.cs" />
     <Compile Include="Assets\ChainBooks.cs" />
     <Compile Include="Assets\ChainFinal.cs" />
     <Compile Include="Assets\ChainFour.cs" />
     <Compile Include="Assets\ChainSecond.cs" />
     <Compile Include="Assets\ChainThird.cs" />
     <Compile Include="Assets\DontDestroy.cs" />
+    <Compile Include="Assets\DoorController.cs" />
+    <Compile Include="Assets\FallController.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_AutoStopLoopedEffect.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_New.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_RandomDir.cs" />
@@ -662,6 +665,7 @@
     <Compile Include="Assets\JMO Assets\Cartoon FX\Scripts\CFX_AutoRotate.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX\Scripts\CFX_LightFlicker.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX\Scripts\CFX_LightIntensityFade.cs" />
+    <Compile Include="Assets\JumpController.cs" />
     <Compile Include="Assets\QuickOutline\Scripts\Outline.cs" />
     <Compile Include="Assets\Scripts\ArtifactProjectileScript.cs" />
     <Compile Include="Assets\Scripts\ArtifactScript.cs" />
