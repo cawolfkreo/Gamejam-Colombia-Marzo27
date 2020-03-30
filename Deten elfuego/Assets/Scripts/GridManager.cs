@@ -77,7 +77,6 @@ public class GridManager : MonoBehaviour
         }
         else
         {
-            Debug.Log("WHYY");
             GridLines.gameObject.SetActive(false);
         }
     }
